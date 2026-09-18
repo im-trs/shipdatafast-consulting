@@ -398,7 +398,7 @@ Show three plain contact options:
 - Reconciliation enquiry, subject `ShipDataFast Data Reconciliation enquiry`, section ID `reconciliation`.
 - Validation enquiry, subject `ShipDataFast Data Validation enquiry`, section ID `validation`.
 
-Use the existing configured business address **info@trseeds.co.uk**, with visible text and `mailto:` links. Delivery has not been tested. Do not invent new mailboxes. Suggest leaving out confidential records and credentials.
+Use the existing configured business address **info@shipdatafast.com**, with visible text and `mailto:` links. Delivery has not been tested. Do not invent new mailboxes. Suggest leaving out confidential records and credentials.
 
 No form, Mailgun integration, autoresponder, database, calendar embed or marketing funnel in this release. No response-time or free-audit promise. A copyable address remains available when a visitor has no default email client.
 

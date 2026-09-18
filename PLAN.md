@@ -1,7 +1,7 @@
 # PLAN.md · ShipDataFast Consulting
 
-**Implementation plan:** 18 September 2026  
-**Source of truth:** `DESIGN.md` approved for ShipDataFast.  
+**Implementation plan:** 18 September 2026
+**Source of truth:** `DESIGN.md` approved for ShipDataFast.
 **Target:** a completely new static HTML/CSS website for ShipDataFast as a data engineering consulting company with two distinct software product destinations.
 
 ## 0. Copilot operating rules
@@ -238,7 +238,7 @@ Do not turn former employers into ShipDataFast customers.
 
 ### /contact
 
-No form. Use the confirmed business email `info@trseeds.co.uk`.
+No form. Use the confirmed business email `info@shipdatafast.com`.
 
 Create three anchored enquiry sections:
 - general consulting

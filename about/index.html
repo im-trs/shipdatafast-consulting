@@ -28,17 +28,29 @@
       }]
     }
     </script>
+      <script defer src="/assets/js/site-shell.js"></script>
+      <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/tailwind-theme.js"></script>
+    <style>
+      body {
+        background-color: #f5fbf4;
+        color: #171d19;
+        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        -webkit-font-smoothing: antialiased;
+      }
+      .structural-rule { border-color: #171d19; }
+      .subtle-rule { border-color: #c4c5d8; }
+      .custom-scroll::-webkit-scrollbar { height: 4px; width: 4px; }
+      .custom-scroll::-webkit-scrollbar-thumb { background: #171d19; }
+    </style>
   </head>
-  <body>
+  <body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-[#D7FF3F] selection:text-on-surface">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-      <div class="site-width inner">
-        <div class="brand-wrap"><a class="brand" href="/">ShipDataFast</a></div>
-        <nav class="main-nav" aria-label="Main navigation"><details><summary>Services</summary><div class="menu"><a href="/services/data-engineering/">Data Engineering</a><a href="/services/data-validation/">Data Validation</a><a href="/services/data-reconciliation/">Data Reconciliation</a></div></details><details><summary>Products</summary><div class="menu"><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a></div></details><a href="/financial-services/" style="text-decoration:none;color:var(--ink);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;">Financial services</a><a href="/about/" style="text-decoration:none;color:var(--ink);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;">About</a></nav>
-        <div class="mobile-nav"><details><summary>Menu</summary><div class="menu"><a href="/services/data-engineering/">Data Engineering</a><a href="/services/data-validation/">Data Validation</a><a href="/services/data-reconciliation/">Data Reconciliation</a><a href="/products/">Products</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a><a href="/financial-services/">Financial services</a><a href="/about/">About</a></div></details></div>
-        <a class="header-cta" href="/contact/">Discuss a data problem</a>
-      </div>
-    </header>
+    <div data-site-shell="header"></div>
 
     <main id="main-content">
       <section class="page-header">
@@ -82,12 +94,6 @@
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <div class="site-width">
-        <div class="footer-grid"><div class="footer-group"><h4>Services</h4><a href="/services/data-engineering/">Data engineering</a><a href="/services/data-validation/">Data validation</a><a href="/services/data-reconciliation/">Data reconciliation</a></div><div class="footer-group"><h4>Products</h4><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a></div><div class="footer-group"><h4>Company</h4><a href="/about/">About</a><a href="/financial-services/">Financial services</a><a href="/contact/">Contact</a></div></div>
-        <div class="footer-meta"><span>© ShipDataFast</span><a href="/privacy-policy/">Privacy policy</a><a href="/tos/">Terms of service</a></div>
-      </div>
-    </footer>
+    <div data-site-shell="footer"></div>
   </body>
 </html>
