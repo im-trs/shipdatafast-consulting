@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation Software · ShipDataFast</title>
+    <meta name="description" content="Explore Data Validation from ShipDataFast and discuss your data checking requirements.">
+    <link rel="canonical" href="https://shipdatafast.com/products/validation/">
+    <meta property="og:title" content="Data Validation Software · ShipDataFast">
+    <meta property="og:description" content="Explore Data Validation from ShipDataFast and discuss your data checking requirements.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shipdatafast.com/products/validation/">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://shipdatafast.com/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://shipdatafast.com/products/"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Data Validation",
+        "item": "https://shipdatafast.com/products/validation/"
+      }]
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="site-width inner">
+        <div class="brand-wrap"><a class="brand" href="/">ShipDataFast</a></div>
+        <nav class="main-nav" aria-label="Main navigation"><details><summary>Services</summary><div class="menu"><a href="/services/data-engineering/">Data Engineering</a><a href="/services/data-validation/">Data Validation</a><a href="/services/data-reconciliation/">Data Reconciliation</a></div></details><details open><summary>Products</summary><div class="menu"><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a></div></details><a href="/financial-services/" style="text-decoration:none;color:var(--ink);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;">Financial services</a><a href="/about/" style="text-decoration:none;color:var(--ink);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;">About</a></nav>
+        <div class="mobile-nav"><details><summary>Menu</summary><div class="menu"><a href="/services/data-engineering/">Data Engineering</a><a href="/services/data-validation/">Data Validation</a><a href="/services/data-reconciliation/">Data Reconciliation</a><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a><a href="/financial-services/">Financial services</a><a href="/about/">About</a></div></details></div>
+        <a class="header-cta" href="/contact/">Discuss a data problem</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-header">
+        <div class="site-width">
+          <ul class="breadcrumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li> / </li><li><a href="/products/">Products</a></li><li> / </li><li><span>Data Validation</span></li></ul>
+          <div class="eyebrow">ShipDataFast products</div>
+          <h1>Data Validation</h1>
+          <p class="page-intro">Check whether your data meets defined requirements.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="site-width content-layout">
+          <div class="content-panel">
+            <h2>Problem and relevance</h2>
+            <p>Data validation is used when a dataset must meet explicit rules before it is trusted, consumed or transferred. The rules may cover required values, ranges, allowed values, uniqueness, type constraints or cross-field consistency.</p>
+            <p>Validation is different from reconciliation: it tests one dataset against requirements rather than comparing corresponding records across two datasets.</p>
+          </div>
+          <aside class="content-panel">
+            <h3>Product purpose</h3>
+            <p>This product asks: does this data satisfy its rules?</p>
+            <p><a href="/services/data-validation/">Explore the validation consulting service</a></p>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="site-width two-column">
+          <div class="content-panel">
+            <h2>Illustrative validation rules</h2>
+            <p>Rules: <code>customer_id</code> is required and <code>amount</code> must be non-negative.</p>
+            <div class="table-scroll">
+              <table style="width:100%;border-collapse:collapse;min-width:420px;">
+                <thead>
+                  <tr><th>Record</th><th>Customer</th><th>Amount</th><th>Expected result</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>V-100</td><td>C-10</td><td>25.00</td><td>Pass</td></tr>
+                  <tr><td>V-101</td><td>Empty</td><td>10.00</td><td>Required customer missing</td></tr>
+                  <tr><td>V-102</td><td>C-12</td><td>-5.00</td><td>Amount below zero</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="content-panel">
+            <h3>Design note</h3>
+            <ul>
+              <li>Three records, one passing record and two failing records.</li>
+              <li>There are two rule failures, even though only two records fail.</li>
+              <li>Record-failure counts and rule-failure counts can differ when one record breaks multiple rules.</li>
+            </ul>
+            <div class="notice">
+              <strong>Conceptual only</strong>
+              This is a proposed example, not observed software output. It should only become product evidence after a real engine run is independently checked.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="site-width">
+          <div class="content-panel">
+            <h2>What this product would need to prove</h2>
+            <ul>
+              <li>Actual supported input format and rule syntax.</li>
+              <li>Concrete evaluation semantics for missing values, ranges and uniqueness.</li>
+              <li>Observed findings with record, rule and reason.</li>
+              <li>Verified automation or delivery integration if available.</li>
+            </ul>
+            <p><a class="btn" href="/contact/#validation">Discuss Data Validation</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="site-width">
+        <div class="footer-grid">
+          <div class="footer-group"><h4>Services</h4><a href="/services/data-engineering/">Data engineering</a><a href="/services/data-validation/">Data validation</a><a href="/services/data-reconciliation/">Data reconciliation</a></div>
+          <div class="footer-group"><h4>Products</h4><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a></div>
+          <div class="footer-group"><h4>Company</h4><a href="/about/">About</a><a href="/financial-services/">Financial services</a><a href="/contact/">Contact</a></div>
+        </div>
+        <div class="footer-meta"><span>© ShipDataFast</span><a href="/privacy-policy/">Privacy policy</a><a href="/tos/">Terms of service</a></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Reconciliation Software · ShipDataFast</title>
+    <meta name="description" content="Explore Data Reconciliation from ShipDataFast and discuss your dataset comparison requirements.">
+    <link rel="canonical" href="https://shipdatafast.com/products/reconciliation/">
+    <meta property="og:title" content="Data Reconciliation Software · ShipDataFast">
+    <meta property="og:description" content="Explore Data Reconciliation from ShipDataFast and discuss your dataset comparison requirements.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shipdatafast.com/products/reconciliation/">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://shipdatafast.com/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://shipdatafast.com/products/"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Data Reconciliation",
+        "item": "https://shipdatafast.com/products/reconciliation/"
+      }]
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="site-width inner">
+        <div class="brand-wrap"><a class="brand" href="/">ShipDataFast</a></div>
+        <nav class="main-nav" aria-label="Main navigation"><details><summary>Services</summary><div class="menu"><a href="/services/data-engineering/">Data Engineering</a><a href="/services/data-validation/">Data Validation</a><a href="/services/data-reconciliation/">Data Reconciliation</a></div></details><details open><summary>Products</summary><div class="menu"><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a></div></details><a href="/financial-services/" style="text-decoration:none;color:var(--ink);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;">Financial services</a><a href="/about/" style="text-decoration:none;color:var(--ink);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;">About</a></nav>
+        <div class="mobile-nav"><details><summary>Menu</summary><div class="menu"><a href="/services/data-engineering/">Data Engineering</a><a href="/services/data-validation/">Data Validation</a><a href="/services/data-reconciliation/">Data Reconciliation</a><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a><a href="/financial-services/">Financial services</a><a href="/about/">About</a></div></details></div>
+        <a class="header-cta" href="/contact/">Discuss a data problem</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-header">
+        <div class="site-width">
+          <ul class="breadcrumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li> / </li><li><a href="/products/">Products</a></li><li> / </li><li><span>Data Reconciliation</span></li></ul>
+          <div class="eyebrow">ShipDataFast products</div>
+          <h1>Data Reconciliation</h1>
+          <p class="page-intro">Understand where corresponding datasets disagree.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="site-width content-layout">
+          <div class="content-panel">
+            <h2>Problem and relevance</h2>
+            <p>Data reconciliation is relevant when two systems are meant to carry the same business truth but do not yet agree. Typical situations include migration verification, source-to-target comparison and post-integration checking.</p>
+            <p>This page remains a conceptual product destination until engine evidence is supplied. The aim is to explain the problem clearly and separate the product idea from the consulting service.</p>
+          </div>
+          <aside class="content-panel">
+            <h3>Product purpose</h3>
+            <p>This product asks: where do these datasets disagree?</p>
+            <p><a href="/services/data-reconciliation/">Explore the reconciliation consulting service</a></p>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="site-width two-column">
+          <div class="content-panel">
+            <h2>Illustrative example</h2>
+            <p>This fixture is intentionally labelled conceptual. It uses the exact matching pattern from the design brief and is not a verified runtime output.</p>
+            <div class="table-scroll">
+              <table style="width:100%;border-collapse:collapse;min-width:420px;">
+                <thead>
+                  <tr><th>Record</th><th>Source amount</th><th>Target amount</th><th>Expected result</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>TX-100</td><td>100.00</td><td>100.00</td><td>Match</td></tr>
+                  <tr><td>TX-101</td><td>49.95</td><td>50.95</td><td>Difference: target minus source = 1.00</td></tr>
+                  <tr><td>TX-102</td><td>25.00</td><td>Absent</td><td>Source only</td></tr>
+                  <tr><td>TX-103</td><td>Absent</td><td>12.00</td><td>Target only</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="content-panel">
+            <h3>Design note</h3>
+            <ul>
+              <li>Three source records, three target records and four distinct keys.</li>
+              <li>One matched record and three exception records.</li>
+              <li>An absent record is not the same as a null amount.</li>
+            </ul>
+            <div class="notice">
+              <strong>Conceptual only</strong>
+              This example is for explanation and design validation. It is not presented as product evidence until an engine run is independently verified.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="site-width">
+          <div class="content-panel">
+            <h2>What this product would need to prove</h2>
+            <ul>
+              <li>Actual supported input formats and matching rules.</li>
+              <li>Real configuration for key and field mapping.</li>
+              <li>Observed handling of duplicates, missing records and precision policy.</li>
+              <li>Verified output and known limitations from a real run.</li>
+            </ul>
+            <p><a class="btn" href="/contact/#reconciliation">Discuss Data Reconciliation</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="site-width">
+        <div class="footer-grid">
+          <div class="footer-group"><h4>Services</h4><a href="/services/data-engineering/">Data engineering</a><a href="/services/data-validation/">Data validation</a><a href="/services/data-reconciliation/">Data reconciliation</a></div>
+          <div class="footer-group"><h4>Products</h4><a href="/products/">Overview</a><a href="/products/reconciliation/">Data Reconciliation</a><a href="/products/validation/">Data Validation</a></div>
+          <div class="footer-group"><h4>Company</h4><a href="/about/">About</a><a href="/financial-services/">Financial services</a><a href="/contact/">Contact</a></div>
+        </div>
+        <div class="footer-meta"><span>© ShipDataFast</span><a href="/privacy-policy/">Privacy policy</a><a href="/tos/">Terms of service</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
