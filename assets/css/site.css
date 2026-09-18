@@ -631,6 +631,128 @@ section + section { border-top: 2px solid var(--ink); }
   margin-top: 0.5rem;
 }
 
+.checklist-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.checklist-callout {
+  border: 2px solid var(--ink);
+  background: var(--white);
+  padding: 1.2rem;
+}
+
+.checklist-callout p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.checklist-form {
+  border: 2px solid var(--ink);
+  background: var(--white);
+  padding: 1.2rem;
+}
+
+.checklist-form h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.checklist-form p {
+  margin: 0 0 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.form-grid label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="email"] {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  padding: 0.65rem 0.8rem;
+  color: var(--ink);
+}
+
+.checklist-note {
+  margin-top: 0.8rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.problem-list {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.problem-list li {
+  margin-bottom: 0.25rem;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.step-row {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 0.8rem;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
+.step-row strong {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.fit-list {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.fit-list li {
+  margin-bottom: 0.3rem;
+}
+
+.cta-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+@media (min-width: 900px) {
+  .checklist-hero {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+}
+
 .footer {
   border-top: 2px solid var(--ink);
   padding: 2.5rem 0 3rem;
