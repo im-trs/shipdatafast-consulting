@@ -6,6 +6,14 @@
 
 ShipDataFast is an independent engineering consultancy founded by Ivano Mannella (TR Seeds Ltd), focusing on high-stakes data integrity across database migrations, core transaction processing, and system integrations. We offer hands-on data engineering consulting and two specialized software offerings: Data Reconciliation and Data Validation.
 
+## Canonical Identity & Entity Signals
+- **Entity**: ShipDataFast (Trading entity of TR Seeds Ltd)
+- **Founder & Lead Engineer**: Ivano Mannella
+- **Official Profiles**:
+  - GitHub: https://github.com/im-trs
+  - LinkedIn: https://www.linkedin.com/in/ivanomannella/
+- **Official Contact**: info@shipdatafast.com
+
 ## Core Offerings
 
 ### Consulting Services
@@ -14,8 +22,13 @@ ShipDataFast is an independent engineering consultancy founded by Ivano Mannella
 - [Data Reconciliation](https://shipdatafast.com/services/data-reconciliation/): Defining matching contracts, timing cut-offs, and investigating cross-system differences.
 
 ### Software Offerings
-- [Data Reconciliation](https://shipdatafast.com/products/reconciliation/): Comparison software answering "Where do these datasets disagree?" across two corresponding sources.
-- [Data Validation](https://shipdatafast.com/products/validation/): Rules-based evaluation answering "Does this data satisfy its rules?" for single datasets.
+- [Data Reconciliation](https://shipdatafast.com/products/reconciliation/): Comparison software answering "Where do these datasets disagree?" across two corresponding sources under explicit matching and tolerance rules.
+- [Data Validation](https://shipdatafast.com/products/validation/): Rules-based evaluation answering "Does this data satisfy its rules?" for single datasets against mandatory presence, format patterns, and bounds.
+
+## Key Facts & Operational Principles
+- **Data Security**: Zero-trust, client-controlled architecture. No customer records or credentials are sent to external cloud platforms.
+- **Auditable Outputs**: Every mismatch traces directly to explicit inputs and configured matching rules.
+- **Sector Focus**: Financial services and fintech transaction reconciliation, applicable to all data-intensive systems.
 
 ## Key Links
 - [About ShipDataFast & Founder](https://shipdatafast.com/about/)

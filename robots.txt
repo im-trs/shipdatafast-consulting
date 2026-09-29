@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
+# Explicit AI Search & Assistant Crawlers (GEO / Answer Engines)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Training Scrapers (Disallow Bulk Training)
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://shipdatafast.com/sitemap.xml
