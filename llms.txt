@@ -1,0 +1,24 @@
+# ShipDataFast · Data Engineering Consulting
+
+> Specialist data engineering consultancy helping engineering teams build reliable data flows, validate critical datasets, and reconcile differences between systems.
+
+## Summary
+
+ShipDataFast is an independent engineering consultancy founded by Ivano Mannella (TR Seeds Ltd), focusing on high-stakes data integrity across database migrations, core transaction processing, and system integrations. We offer hands-on data engineering consulting and two specialized software offerings: Data Reconciliation and Data Validation.
+
+## Core Offerings
+
+### Consulting Services
+- [Data Engineering](https://shipdatafast.com/services/data-engineering/): Architecture, integration contracts, transformation pipelines, and traceable handovers.
+- [Data Validation](https://shipdatafast.com/services/data-validation/): Turning business data requirements into repeatable automated assertion checks.
+- [Data Reconciliation](https://shipdatafast.com/services/data-reconciliation/): Defining matching contracts, timing cut-offs, and investigating cross-system differences.
+
+### Software Offerings
+- [Data Reconciliation](https://shipdatafast.com/products/reconciliation/): Comparison software answering "Where do these datasets disagree?" across two corresponding sources.
+- [Data Validation](https://shipdatafast.com/products/validation/): Rules-based evaluation answering "Does this data satisfy its rules?" for single datasets.
+
+## Key Links
+- [About ShipDataFast & Founder](https://shipdatafast.com/about/)
+- [Financial Services Experience](https://shipdatafast.com/financial-services/)
+- [Contact / Discuss a Data Problem](https://shipdatafast.com/contact/)
+- [Email](mailto:info@shipdatafast.com)

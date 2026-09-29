@@ -1,0 +1,1311 @@
+{
+  "url": "https://im-trs.github.io/shipdatafast-consulting/",
+  "scores": {
+    "overall": 62,
+    "categories": {
+      "security": 45,
+      "social": 38,
+      "robots": 20,
+      "article": 75,
+      "broken_links": 100,
+      "internal_links": 100,
+      "redirects": 100,
+      "llms_txt": 0,
+      "pagespeed": 0,
+      "onpage": 100,
+      "readability": 22,
+      "entity": 0,
+      "link_profile": 85,
+      "hreflang": 0,
+      "duplicate_content": 100
+    },
+    "weights": {
+      "security": 8,
+      "social": 5,
+      "robots": 8,
+      "broken_links": 10,
+      "internal_links": 8,
+      "redirects": 3,
+      "llms_txt": 5,
+      "pagespeed": 13,
+      "onpage": 10,
+      "readability": 8,
+      "entity": 5,
+      "link_profile": 7,
+      "hreflang": 5,
+      "duplicate_content": 5
+    },
+    "scoring_version": 1
+  },
+  "data": {
+    "url": "https://im-trs.github.io/shipdatafast-consulting/",
+    "domain": "im-trs.github.io",
+    "timestamp": "2026-09-29T16:20:54.841136",
+    "sections": {
+      "robots": {
+        "url": "https://im-trs.github.io/robots.txt",
+        "status": 404,
+        "user_agents": {},
+        "sitemaps": [],
+        "crawl_delays": {},
+        "ai_crawler_status": {
+          "GPTBot": "allowed (no robots.txt)",
+          "ChatGPT-User": "allowed (no robots.txt)",
+          "ClaudeBot": "allowed (no robots.txt)",
+          "PerplexityBot": "allowed (no robots.txt)",
+          "Google-Extended": "allowed (no robots.txt)",
+          "Applebot-Extended": "allowed (no robots.txt)",
+          "Bytespider": "allowed (no robots.txt)",
+          "CCBot": "allowed (no robots.txt)",
+          "anthropic-ai": "allowed (no robots.txt)",
+          "FacebookBot": "allowed (no robots.txt)",
+          "Amazonbot": "allowed (no robots.txt)"
+        },
+        "issues": [
+          "\ud83d\udd34 No robots.txt found \u2014 all crawlers allowed by default"
+        ],
+        "error": null
+      },
+      "security": {
+        "url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "score": 45,
+        "https": true,
+        "headers_present": {
+          "HSTS (Strict-Transport-Security)": "max-age=31556952"
+        },
+        "headers_missing": {
+          "Content-Security-Policy (CSP)": "Prevents XSS, clickjacking, and code injection.",
+          "X-Frame-Options": "Prevents clickjacking by controlling iframe embedding.",
+          "X-Content-Type-Options": "Prevents MIME-type sniffing.",
+          "Referrer-Policy": "Controls how much referrer info is shared.",
+          "Permissions-Policy": "Controls browser feature access (camera, microphone, geolocation)."
+        },
+        "header_values": {
+          "strict-transport-security": "max-age=31556952"
+        },
+        "issues": [
+          "\u26a0\ufe0f HSTS missing includeSubDomains directive",
+          "\ud83d\udd34 5 security headers missing \u2014 poor security posture"
+        ],
+        "recommendations": [
+          "Content-Security-Policy (CSP): Add a Content-Security-Policy header restricting script/style sources.",
+          "X-Frame-Options: Add header: X-Frame-Options: SAMEORIGIN",
+          "X-Content-Type-Options: Add header: X-Content-Type-Options: nosniff",
+          "Referrer-Policy: Add header: Referrer-Policy: strict-origin-when-cross-origin",
+          "Permissions-Policy: Add header: Permissions-Policy: camera=(), microphone=(), geolocation=()"
+        ],
+        "error": null
+      },
+      "social": {
+        "url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "score": 38,
+        "og_tags": {
+          "og:title": "ShipDataFast \u00b7 Data Engineering Consultancy",
+          "og:description": "Data engineering consulting for reliable data flows, validation and reconciliation. Explore ShipDataFast services and our two data software products.",
+          "og:type": "website",
+          "og:url": "https://shipdatafast.com/"
+        },
+        "twitter_tags": {
+          "twitter:card": "summary_large_image"
+        },
+        "og_present": [
+          "og:title",
+          "og:description",
+          "og:url",
+          "og:type"
+        ],
+        "og_missing": [
+          "og:image"
+        ],
+        "twitter_present": [
+          "twitter:card"
+        ],
+        "twitter_missing": [],
+        "issues": [
+          "\ud83d\udd34 Missing required: og:image"
+        ],
+        "recommendations": [],
+        "preview": {
+          "title": "ShipDataFast \u00b7 Data Engineering Consultancy",
+          "description": "Data engineering consulting for reliable data flows, validation and reconciliation. Explore ShipDataFast services and our two data software products.",
+          "image": null,
+          "site_name": ""
+        },
+        "error": null
+      },
+      "redirects": {
+        "url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "final_url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "chain": [
+          {
+            "step": 1,
+            "url": "https://im-trs.github.io/shipdatafast-consulting/",
+            "status": 200,
+            "time_ms": 219,
+            "final": true
+          }
+        ],
+        "total_hops": 0,
+        "total_time_ms": 219,
+        "has_loop": false,
+        "has_mixed_protocol": false,
+        "issues": [],
+        "error": null
+      },
+      "llms_txt": {
+        "url": "https://im-trs.github.io/llms.txt",
+        "full_url": "https://im-trs.github.io/llms-full.txt",
+        "exists": false,
+        "full_exists": false,
+        "status": 404,
+        "full_status": 404,
+        "parsed": {
+          "title": null,
+          "description": null,
+          "sections": [],
+          "links": []
+        },
+        "quality": {
+          "score": 0,
+          "issues": [
+            "\ud83d\udd34 No llms.txt found"
+          ],
+          "suggestions": [
+            "Create /llms.txt with site name, description, and key page links"
+          ]
+        },
+        "error": null
+      },
+      "broken_links": {
+        "page_url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "total_links": 12,
+        "checked": 12,
+        "broken": [],
+        "redirected": [],
+        "timeout": [],
+        "healthy": 12,
+        "summary": {
+          "total": 12,
+          "healthy": 12,
+          "broken": 0,
+          "redirected": 0,
+          "timeout": 0
+        },
+        "issues": [],
+        "error": null
+      },
+      "internal_links": {
+        "start_url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "domain": "im-trs.github.io",
+        "pages_crawled": 13,
+        "total_internal_links": 156,
+        "unique_pages_found": 12,
+        "max_depth_reached": 1,
+        "pages": {
+          "https://im-trs.github.io/shipdatafast-consulting/financial-services": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/products/validation": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/": {
+            "outgoing_links": 12,
+            "incoming_links": 0
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/about": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/privacy-policy": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/contact": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/products": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/services/data-validation": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/services/data-reconciliation": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/tos": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/services/data-engineering": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          },
+          "https://im-trs.github.io/shipdatafast-consulting/products/reconciliation": {
+            "outgoing_links": 12,
+            "incoming_links": 13
+          }
+        },
+        "anchor_texts": {
+          "Data Validation": 26,
+          "Data Reconciliation": 26,
+          "ShipDataFast": 13,
+          "Data Engineering": 13,
+          "Products Overview": 13,
+          "Financial Services": 13,
+          "About": 13,
+          "Privacy Policy": 13,
+          "Terms of Service": 13,
+          "Discuss a data problem": 11,
+          "Discuss Data Validation": 1,
+          "Discuss Data Reconciliation": 1
+        },
+        "link_distribution": {
+          "min": 12,
+          "max": 12,
+          "avg": 12.0
+        },
+        "orphan_candidates": [],
+        "nofollow_links": [],
+        "issues": [],
+        "recommendations": [],
+        "error": null
+      },
+      "pagespeed": {
+        "url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "strategy": "mobile",
+        "performance_score": null,
+        "metrics": {},
+        "opportunities": [],
+        "diagnostics": [],
+        "field_data_available": false,
+        "error": "Rate limited by Google API. Wait a few minutes or add an API key."
+      },
+      "entity": {
+        "url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "entity_name": "ShipDataFast",
+        "entities_in_schema": [
+          {
+            "type": "Organization",
+            "name": "ShipDataFast",
+            "url": "https://shipdatafast.com/",
+            "sameAs": [],
+            "logo": "",
+            "description": "Specialist data engineering consultancy helping engineering teams build data flows, validate critical datasets and reconcile differences between systems.",
+            "identifier": ""
+          }
+        ],
+        "sameas_analysis": {
+          "found": {},
+          "missing": {
+            "Wikipedia": {
+              "domain": "wikipedia.org",
+              "priority": "Critical",
+              "kg_signal": "Primary"
+            },
+            "Wikidata": {
+              "domain": "wikidata.org",
+              "priority": "Critical",
+              "kg_signal": "Primary"
+            },
+            "LinkedIn": {
+              "domain": "linkedin.com",
+              "priority": "High",
+              "kg_signal": "Strong"
+            },
+            "Twitter/X": {
+              "domain": "x.com",
+              "priority": "High",
+              "kg_signal": "Strong"
+            }
+          },
+          "issues": [],
+          "total_found": 0,
+          "total_missing_critical": 4
+        },
+        "wikidata": {
+          "found": false,
+          "qid": null,
+          "url": null
+        },
+        "wikipedia": {
+          "found": false,
+          "url": null
+        },
+        "google_kg": {
+          "checked": false,
+          "found": false,
+          "result": null
+        },
+        "nap_issues": [],
+        "issues": [
+          {
+            "severity": "Critical",
+            "area": "sameAs",
+            "finding": "Entity schema exists but has no sameAs properties.",
+            "fix": "Add sameAs URLs pointing to Wikipedia, LinkedIn, Twitter/X, etc."
+          },
+          {
+            "severity": "Info",
+            "area": "Wikidata",
+            "finding": "No Wikidata entry found for 'ShipDataFast'.",
+            "fix": "If the entity meets Wikidata notability guidelines, create or improve an item with accurate third-party references. Do not create one solely for SEO."
+          },
+          {
+            "severity": "Info",
+            "area": "Wikipedia",
+            "finding": "No Wikipedia article found for 'ShipDataFast'.",
+            "fix": "Only pursue Wikipedia if the entity meets independent notability standards. Otherwise, strengthen official schema, sameAs profiles, citations, and About/Contact signals."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to Wikipedia (Primary KG signal).",
+            "fix": "Add the existing official 'wikipedia.org' URL to sameAs; do not create this profile solely for SEO."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to Wikidata (Primary KG signal).",
+            "fix": "Add the existing official 'wikidata.org' URL to sameAs; do not create this profile solely for SEO."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to LinkedIn (Strong KG signal).",
+            "fix": "Add 'linkedin.com' profile URL to sameAs array in your entity schema."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to Twitter/X (Strong KG signal).",
+            "fix": "Add 'x.com' profile URL to sameAs array in your entity schema."
+          }
+        ],
+        "summary": {
+          "entities_found": 1,
+          "sameas_count": 0,
+          "sameas_missing_critical": 4,
+          "wikidata_found": false,
+          "wikipedia_found": false,
+          "google_kg_checked": false,
+          "google_kg_found": false,
+          "total_issues": 7
+        }
+      },
+      "link_profile": {
+        "pages_crawled": 1,
+        "total_internal_links": 41,
+        "total_external_links": 0,
+        "unique_internal_targets": 12,
+        "unique_external_domains": 0,
+        "avg_internal_links_per_page": 41.0,
+        "orphan_pages": {
+          "count": 0,
+          "urls": []
+        },
+        "dead_end_pages": {
+          "count": 0,
+          "urls": []
+        },
+        "top_linked_pages": [
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/products/",
+            "inbound_links": 5
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/contact/",
+            "inbound_links": 5
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/services/data-engineering/",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/services/data-validation/",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/services/data-reconciliation/",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/products/reconciliation/",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/products/validation/",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/financial-services/",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/about/",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/",
+            "inbound_links": 1
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/privacy-policy/",
+            "inbound_links": 1
+          },
+          {
+            "url": "https://im-trs.github.io/shipdatafast-consulting/tos/",
+            "inbound_links": 1
+          }
+        ],
+        "top_external_domains": [],
+        "issues": [],
+        "site_url": "https://im-trs.github.io/shipdatafast-consulting/"
+      },
+      "hreflang": {
+        "url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "implementation_method": "none",
+        "hreflang_tags_found": 0,
+        "tags": [],
+        "sitemap": {
+          "found": false,
+          "url": "https://im-trs.github.io/sitemap.xml",
+          "has_xhtml_namespace": false,
+          "language_variants_found": [],
+          "note": "No hreflang found in sitemap."
+        },
+        "checks": {
+          "hreflang_present": {
+            "passed": false,
+            "severity": "Info",
+            "finding": "No hreflang tags found (HTML, HTTP headers, or sitemap).",
+            "fix": "If this is a single-language site, hreflang is not needed. For multi-language sites, implement hreflang via HTML link tags or sitemap."
+          }
+        },
+        "language_code_issues": [],
+        "return_tag_checks": [],
+        "summary": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0,
+          "passed": 0
+        }
+      },
+      "duplicate_content": {
+        "pages_analyzed": 25,
+        "exact_duplicates": [
+          {
+            "type": "exact_duplicate",
+            "severity": "Critical",
+            "urls": [
+              "https://im-trs.github.io/shipdatafast-consulting/",
+              "https://im-trs.github.io/shipdatafast-consulting"
+            ],
+            "finding": "2 indexable pages have identical content.",
+            "fix": "Consolidate into a single canonical page and redirect duplicates with 301."
+          },
+          {
+            "type": "exact_duplicate",
+            "severity": "Critical",
+            "urls": [
+              "https://im-trs.github.io/contact",
+              "https://im-trs.github.io/financial-services",
+              "https://im-trs.github.io/services/data-engineering",
+              "https://im-trs.github.io/tos",
+              "https://im-trs.github.io/services/data-reconciliation",
+              "https://im-trs.github.io/products/reconciliation",
+              "https://im-trs.github.io/about",
+              "https://im-trs.github.io",
+              "https://im-trs.github.io/services/data-validation",
+              "https://im-trs.github.io/products/validation",
+              "https://im-trs.github.io/privacy-policy",
+              "https://im-trs.github.io/products"
+            ],
+            "finding": "12 indexable pages have identical content.",
+            "fix": "Consolidate into a single canonical page and redirect duplicates with 301."
+          }
+        ],
+        "near_duplicates": [],
+        "thin_content": [
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/tos",
+            "word_count": 101,
+            "threshold": 300,
+            "finding": "Only 101 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/financial-services",
+            "word_count": 146,
+            "threshold": 300,
+            "finding": "Only 146 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/about",
+            "word_count": 183,
+            "threshold": 300,
+            "finding": "Only 183 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/contact",
+            "word_count": 115,
+            "threshold": 300,
+            "finding": "Only 115 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/products/reconciliation",
+            "word_count": 216,
+            "threshold": 300,
+            "finding": "Only 216 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/products",
+            "word_count": 202,
+            "threshold": 300,
+            "finding": "Only 202 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/services/data-validation",
+            "word_count": 170,
+            "threshold": 300,
+            "finding": "Only 170 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/services/data-reconciliation",
+            "word_count": 158,
+            "threshold": 300,
+            "finding": "Only 158 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/services/data-engineering",
+            "word_count": 222,
+            "threshold": 300,
+            "finding": "Only 222 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/products/validation",
+            "word_count": 193,
+            "threshold": 300,
+            "finding": "Only 193 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Warning",
+            "url": "https://im-trs.github.io/shipdatafast-consulting/privacy-policy",
+            "word_count": 125,
+            "threshold": 300,
+            "finding": "Only 125 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/contact",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/financial-services",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/services/data-engineering",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/tos",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/services/data-reconciliation",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/products/reconciliation",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/about",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/services/data-validation",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/products/validation",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/privacy-policy",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          },
+          {
+            "type": "thin_content",
+            "severity": "Critical",
+            "url": "https://im-trs.github.io/products",
+            "word_count": 38,
+            "threshold": 300,
+            "finding": "Only 38 words (minimum: 300).",
+            "fix": "Expand content to at least 300 words of substantive, unique content, or noindex if low-value."
+          }
+        ],
+        "summary": {
+          "exact_duplicate_groups": 2,
+          "near_duplicate_pairs": 0,
+          "thin_pages": 23,
+          "avg_word_count": 130
+        }
+      },
+      "onpage": {
+        "title": "ShipDataFast \u00b7 Data Engineering Consultancy",
+        "meta_description": "Data engineering consulting for reliable data flows, validation and reconciliation. Explore ShipDataFast services and our two data software products.",
+        "meta_robots": null,
+        "x_robots_tag": null,
+        "canonical": "https://shipdatafast.com/",
+        "lang": "en-GB",
+        "charset": "utf-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "favicon": "https://im-trs.github.io/shipdatafast-consulting/favicon.ico",
+        "h1": [
+          "Shipreliabledata faster."
+        ],
+        "h2": [
+          "Your systems moved the data. Did they preserve its meaning?",
+          "Build it. Check it. Reconcile it.",
+          "Two products. Two different data questions.",
+          "Show the inputs. Explain the result.",
+          "Built for data-intensive environments.",
+          "What does your data need to get right?"
+        ],
+        "h3": [
+          "Data Reconciliation",
+          "Data Validation"
+        ],
+        "h4": [
+          "Services",
+          "Products",
+          "Company"
+        ],
+        "h5": [],
+        "h6": [],
+        "images": [],
+        "links": {
+          "internal": [
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/",
+              "text": "ShipDataFast",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-engineering/",
+              "text": "Data Engineering",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-validation/",
+              "text": "Data Validation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-reconciliation/",
+              "text": "Data Reconciliation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/",
+              "text": "Products Overview",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/reconciliation/",
+              "text": "Data Reconciliation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/validation/",
+              "text": "Data Validation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/financial-services/",
+              "text": "Financial Services",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/about/",
+              "text": "About",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/contact/",
+              "text": "Discuss a data problem",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-engineering/",
+              "text": "Data Engineering",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-validation/",
+              "text": "Data Validation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-reconciliation/",
+              "text": "Data Reconciliation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/",
+              "text": "Products Overview",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/reconciliation/",
+              "text": "Data Reconciliation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/validation/",
+              "text": "Data Validation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/financial-services/",
+              "text": "Financial Services",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/about/",
+              "text": "About",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/contact/",
+              "text": "Discuss a data problem",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/contact/",
+              "text": "Discuss a data problem",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/",
+              "text": "Explore our products",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-engineering/",
+              "text": "Data engineering \u2192",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-validation/",
+              "text": "Data validation \u2192",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-reconciliation/",
+              "text": "Data reconciliation \u2192",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/reconciliation/",
+              "text": "Explore Data Reconciliation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/validation/",
+              "text": "Explore Data Validation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/",
+              "text": "Review technical product comparisons \u2192",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/about/",
+              "text": "About the company \u2192",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/financial-services/",
+              "text": "Financial services expertise \u2192",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/contact/",
+              "text": "Discuss a data problem",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-engineering/",
+              "text": "Data Engineering",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-validation/",
+              "text": "Data Validation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/services/data-reconciliation/",
+              "text": "Data Reconciliation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/",
+              "text": "Products Overview",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/reconciliation/",
+              "text": "Data Reconciliation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/products/validation/",
+              "text": "Data Validation",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/about/",
+              "text": "About ShipDataFast",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/financial-services/",
+              "text": "Financial Services",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/contact/",
+              "text": "Discuss a data problem",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/privacy-policy/",
+              "text": "Privacy Policy",
+              "rel": []
+            },
+            {
+              "href": "https://im-trs.github.io/shipdatafast-consulting/tos/",
+              "text": "Terms of Service",
+              "rel": []
+            }
+          ],
+          "external": []
+        },
+        "pagination": {
+          "prev": null,
+          "next": null
+        },
+        "resource_hints": {
+          "preload": [],
+          "preconnect": [],
+          "dns-prefetch": [],
+          "prefetch": [],
+          "prerender": []
+        },
+        "schema": [
+          {
+            "@type": "Unknown",
+            "@types": [
+              "Unknown"
+            ],
+            "@id": null,
+            "@context": "https://schema.org",
+            "status": "active",
+            "note": "",
+            "has_context": true,
+            "has_type": false,
+            "from_graph": false,
+            "raw": {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://shipdatafast.com/#organization",
+                  "name": "ShipDataFast",
+                  "url": "https://shipdatafast.com/",
+                  "email": "info@shipdatafast.com",
+                  "description": "Specialist data engineering consultancy helping engineering teams build data flows, validate critical datasets and reconcile differences between systems."
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://shipdatafast.com/#website",
+                  "url": "https://shipdatafast.com/",
+                  "name": "ShipDataFast",
+                  "publisher": {
+                    "@id": "https://shipdatafast.com/#organization"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "Organization",
+            "@types": [
+              "Organization"
+            ],
+            "@id": "https://shipdatafast.com/#organization",
+            "@context": "https://schema.org",
+            "status": "active",
+            "note": "",
+            "has_context": true,
+            "has_type": true,
+            "from_graph": true,
+            "raw": {
+              "@type": "Organization",
+              "@id": "https://shipdatafast.com/#organization",
+              "name": "ShipDataFast",
+              "url": "https://shipdatafast.com/",
+              "email": "info@shipdatafast.com",
+              "description": "Specialist data engineering consultancy helping engineering teams build data flows, validate critical datasets and reconcile differences between systems."
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@types": [
+              "WebSite"
+            ],
+            "@id": "https://shipdatafast.com/#website",
+            "@context": "https://schema.org",
+            "status": "active",
+            "note": "",
+            "has_context": true,
+            "has_type": true,
+            "from_graph": true,
+            "raw": {
+              "@type": "WebSite",
+              "@id": "https://shipdatafast.com/#website",
+              "url": "https://shipdatafast.com/",
+              "name": "ShipDataFast",
+              "publisher": {
+                "@id": "https://shipdatafast.com/#organization"
+              }
+            }
+          }
+        ],
+        "open_graph": {
+          "og:title": "ShipDataFast \u00b7 Data Engineering Consultancy",
+          "og:description": "Data engineering consulting for reliable data flows, validation and reconciliation. Explore ShipDataFast services and our two data software products.",
+          "og:type": "website",
+          "og:url": "https://shipdatafast.com/"
+        },
+        "twitter_card": {
+          "twitter:card": "summary_large_image"
+        },
+        "word_count": 485,
+        "hreflang": []
+      },
+      "readability": {
+        "word_count": 321,
+        "sentence_count": 23,
+        "paragraph_count": 21,
+        "syllable_count": 680,
+        "avg_sentence_length": 14.0,
+        "avg_paragraph_length": 1.1,
+        "avg_syllables_per_word": 2.12,
+        "flesch_reading_ease": 13.5,
+        "flesch_kincaid_grade": 14.8,
+        "reading_level": "Extremely Difficult (post-graduate)",
+        "estimated_reading_time_min": 1.6,
+        "complex_words": 113,
+        "complex_word_pct": 35.2,
+        "issues": [
+          "\u26a0\ufe0f Content is difficult to read (Flesch: 13.5) \u2014 may reduce engagement",
+          "\u26a0\ufe0f 35.2% complex words (3+ syllables) \u2014 consider simplifying"
+        ],
+        "recommendations": [
+          "Simplify vocabulary and shorten sentences",
+          "Rewrite the flagged long sentences below using the suggested replacements."
+        ],
+        "sentence_rewrites": [
+          {
+            "current": "Homepage hero intro block is broad and hard to scan.",
+            "suggested": "Use a 2-3 sentence hero: who you help, what users can do here, and where to start. Example: \"Learn practical ethical hacking with step-by-step guides. Start with Wi-Fi security, Active Directory, or malware analysis using the tracks below.\"",
+            "current_word_count": "template",
+            "target_word_count": "40-60 total (split into 2-3 sentences)"
+          },
+          {
+            "current": "Section descriptions mix too many topics in one long paragraph.",
+            "suggested": "Replace with short blurbs per section (1 sentence each) and add a clear CTA link: \"Start Wi-Fi Security\", \"Explore AD Attack Paths\", \"View Red-Team Cheat Sheets\".",
+            "current_word_count": "template",
+            "target_word_count": "12-20 words per blurb"
+          }
+        ]
+      },
+      "article": {
+        "url": "https://im-trs.github.io/shipdatafast-consulting/",
+        "cms_detected": "generic",
+        "title": "ShipDataFast \u00b7 Data Engineering Consultancy",
+        "meta_description": "Data engineering consulting for reliable data flows, validation and reconciliation. Explore ShipDataFast services and our two data software products.",
+        "og_description": "Data engineering consulting for reliable data flows, validation and reconciliation. Explore ShipDataFast services and our two data software products.",
+        "author": "",
+        "publish_date": "",
+        "labels": [],
+        "headings": {
+          "h1": [
+            "Shipreliabledata faster."
+          ],
+          "h2": [
+            "Your systems moved the data. Did they preserve its meaning?",
+            "Build it. Check it. Reconcile it.",
+            "Two products. Two different data questions.",
+            "Show the inputs. Explain the result.",
+            "Built for data-intensive environments.",
+            "What does your data need to get right?"
+          ],
+          "h3": [
+            "Data Reconciliation",
+            "Data Validation"
+          ]
+        },
+        "paragraphs": [
+          "ShipDataFast helps engineering teams build data flows, validate critical datasets and reconcile differences between systems.",
+          "A particular focus on financial services. Built for data problems across industries.",
+          "Conceptual model under exact match rules. Real runs vary by configuration.",
+          "Data flows fail in subtle ways. Pipelines execute without errors, but values shift, timing cut-offs misalign, and critical records drop silently between source and target.",
+          "We work with teams facing three practical challenges: migration results that don't match source systems, transformed figures that require rigorous validation checks, and manual spreadsheet reconciliations that cannot scale reliably.",
+          "Practical architecture and implementation connecting sources, building robust transformation pipelines, and establishing traceable handovers.",
+          "Define clear data requirements and implement repeatable automated checks for schemas, required fields, value bounds and business consistency.",
+          "Establish exact matching contracts across decoupled systems. Identify missing records, numeric differences and conversion mismatches.",
+          "Specialised tools designed to address distinct data integrity challenges.",
+          "Compares corresponding records across two separate datasets (source and target) under explicit matching and tolerance rules.",
+          "Evaluates a single dataset against defined criteria such as presence, uniqueness, format patterns and numeric ranges.",
+          "We believe in deterministic, verifiable data operations. Whether in consulting delivery or software execution, every difference must trace directly to explicit inputs and matching policies.",
+          "Our engagements deliver repeatable verification workflows rather than opaque black-box dashboards.",
+          "ShipDataFast is an independent engineering consultancy founded by Ivano Mannella, focused on reliable data architecture and pipeline integrity.",
+          "We have deep technical experience in financial services and fintech integrations\u2014where precision, audit trails, and cut-off reconciliation are mandatory\u2014while applying the same rigor to complex data problems across industries.",
+          "Tell us which systems are involved, what is going wrong and when you need an answer. A short description is enough to start a technical conversation."
+        ],
+        "images": [],
+        "structured_data": [
+          {
+            "@type": "Unknown",
+            "@context": "https://schema.org",
+            "status": "active",
+            "note": "",
+            "has_context": true,
+            "has_type": false,
+            "raw": {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://shipdatafast.com/#organization",
+                  "name": "ShipDataFast",
+                  "url": "https://shipdatafast.com/",
+                  "email": "info@shipdatafast.com",
+                  "description": "Specialist data engineering consultancy helping engineering teams build data flows, validate critical datasets and reconcile differences between systems."
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://shipdatafast.com/#website",
+                  "url": "https://shipdatafast.com/",
+                  "name": "ShipDataFast",
+                  "publisher": {
+                    "@id": "https://shipdatafast.com/#organization"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "readability": {
+          "flesch_reading_ease": 19.3,
+          "fkgl": 13.0,
+          "grade_label": "Difficult (technical / specialist audience)",
+          "word_count": 338,
+          "sentence_count": 34,
+          "avg_sentence_length": 9.9,
+          "avg_syllables_per_word": 2.1
+        },
+        "target_keyword": "data problems across",
+        "extracted_keywords": [
+          "data problems across",
+          "problems across industries",
+          "built data",
+          "data flows",
+          "financial services",
+          "source target",
+          "systems"
+        ],
+        "related_keywords": [
+          "data problems in my area",
+          "data problems with iphone",
+          "the problems with data",
+          "what problems are associated with big data",
+          "data problem statements"
+        ],
+        "seo_issues": [
+          {
+            "severity": "Warning",
+            "area": "Content",
+            "finding": "Content may be thin for a blog post (338 words).",
+            "fix": "Aim for 1,500+ words of substantive, unique content."
+          },
+          {
+            "severity": "Warning",
+            "area": "E-E-A-T",
+            "finding": "No author attribution detected.",
+            "fix": "Add a visible author byline with credentials. Critical post-Dec 2025 E-E-A-T update."
+          },
+          {
+            "severity": "Info",
+            "area": "Freshness",
+            "finding": "No publish date detected in markup.",
+            "fix": "Add visible publish/update date and datePublished in Article schema."
+          },
+          {
+            "severity": "Info",
+            "area": "Readability",
+            "finding": "Content is very difficult to read (Flesch score: 19.3).",
+            "fix": "Simplify sentences. Aim for Flesch score \u2265 50 for broader audience reach."
+          }
+        ]
+      }
+    },
+    "environment": {
+      "primary": "Unknown",
+      "runtime": "Unknown",
+      "confidence": "low",
+      "signals": [
+        "No strong CMS/framework markers were found in HTML source."
+      ],
+      "alternatives": []
+    },
+    "environment_fixes": [
+      {
+        "severity": "critical",
+        "title": "5 security headers missing",
+        "reason": "Missing headers reduce trust and can expose the site to browser/security risks.",
+        "fix": "Set missing security headers at web server or CDN layer."
+      },
+      {
+        "severity": "warning",
+        "title": "No llms.txt found",
+        "reason": "AI crawlers and assistants have no curated machine-readable guidance for key pages.",
+        "fix": "Add `/llms.txt` at site root with concise site description and key URLs."
+      },
+      {
+        "severity": "warning",
+        "title": "Social meta tags are incomplete",
+        "reason": "Missing OG/Twitter tags weakens social previews and share quality.",
+        "fix": "Update page templates to set complete title/meta/OG/Twitter tags."
+      },
+      {
+        "severity": "info",
+        "title": "Performance measurement incomplete",
+        "reason": "PageSpeed API returned an error, so CWV recommendations are less reliable.",
+        "fix": "Set `PAGESPEED_API_KEY` in your environment or `.env` file (see `.env.example`), then rerun. The CLI also accepts `--api-key`. Prioritize LCP/INP/CLS fixes from that output."
+      },
+      {
+        "severity": "warning",
+        "title": "Content readability is difficult",
+        "reason": "Long, complex text can reduce engagement and comprehension.",
+        "fix": "Rewrite key sections with shorter sentences (15-20 words), shorter paragraphs (2-4 sentences), and clearer subheadings."
+      }
+    ]
+  }
+}
