@@ -44,6 +44,44 @@
           "url": "https://shipdatafast.com/",
           "name": "ShipDataFast",
           "publisher": { "@id": "https://shipdatafast.com/#organization" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://shipdatafast.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the difference between data validation and data reconciliation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Data reconciliation compares corresponding records across two separate datasets (such as source and target systems) to detect discrepancies and missing items. In contrast, data validation evaluates a single dataset against explicit criteria—such as required fields, unique keys, and numeric thresholds—without requiring a second comparison dataset."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When should a company reconcile data instead of validating it?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You should use data reconciliation during system migrations, cross-platform integrations, or ledger synchronizations where data exists in two places and must agree. Use data validation at data ingestion boundaries to enforce schema constraints, field formatting, and business rules before data reaches downstream pipelines."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does ShipDataFast consulting or software require uploading data to external cloud servers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. ShipDataFast consulting and specialized tools are designed for zero-trust, local, or client-controlled environments. Workflows and comparisons run directly within your designated infrastructure, ensuring confidential financial records, client identifiers, and proprietary data never leave your secure perimeter."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What data formats and sources are supported for consulting and reconciliation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our engineering workflows support relational databases (PostgreSQL, MySQL, SQL Server), delimited formats (CSV, TSV), JSON/REST APIs, and warehouse exports. Matching contracts and validation suites are configured to fit your specific source-to-target architecture."
+              }
+            }
+          ]
         }
       ]
     }
@@ -306,6 +344,47 @@
               <a href="./about/" style="margin-right: 24px; font-weight: 600;">About the company &rarr;</a>
               <a href="./financial-services/" style="font-weight: 600;">Financial services expertise &rarr;</a>
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section (AEO Answer Blocks & INTENT §19) -->
+      <section class="section">
+        <div class="container">
+          <div style="margin-bottom: 32px;">
+            <div class="eyebrow">COMMON QUESTIONS</div>
+            <h2>Frequently asked questions</h2>
+            <p class="intro">Direct technical answers regarding our consulting scope, validation rules, and reconciliation methodology.</p>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>What is the difference between data validation and data reconciliation?</summary>
+              <div class="faq-answer">
+                <p>Data reconciliation compares corresponding records across two separate datasets (such as source and target systems) to detect discrepancies and missing items. In contrast, data validation evaluates a single dataset against explicit criteria—such as required fields, unique keys, and numeric thresholds—without requiring a second comparison dataset.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>When should a company reconcile data instead of validating it?</summary>
+              <div class="faq-answer">
+                <p>You should use data reconciliation during system migrations, cross-platform integrations, or ledger synchronizations where data exists in two places and must agree. Use data validation at data ingestion boundaries to enforce schema constraints, field formatting, and business rules before data reaches downstream pipelines.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Does ShipDataFast consulting or software require uploading data to external cloud servers?</summary>
+              <div class="faq-answer">
+                <p>No. ShipDataFast consulting and specialized tools are designed for zero-trust, local, or client-controlled environments. Workflows and comparisons run directly within your designated infrastructure, ensuring confidential financial records, client identifiers, and proprietary data never leave your secure perimeter.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>What data formats and sources are supported for consulting and reconciliation?</summary>
+              <div class="faq-answer">
+                <p>Our engineering workflows support relational databases (PostgreSQL, MySQL, SQL Server), delimited formats (CSV, TSV), JSON/REST APIs, and warehouse exports. Matching contracts and validation suites are configured to fit your specific source-to-target architecture.</p>
+              </div>
+            </details>
           </div>
         </div>
       </section>

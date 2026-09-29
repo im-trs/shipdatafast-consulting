@@ -682,3 +682,61 @@ table.data-table tr:last-child td {
 .breadcrumbs span {
   margin: 0 6px;
 }
+
+/* FAQ Details/Summary (§19 & AEO Answer Blocks) */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-top: var(--space-24);
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--ink);
+  padding: var(--space-24);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-16);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-answer {
+  margin-top: var(--space-16);
+  padding-top: var(--space-16);
+  border-top: 1px solid var(--line);
+}
+
+.faq-answer p {
+  margin-bottom: var(--space-12);
+  max-width: none;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
