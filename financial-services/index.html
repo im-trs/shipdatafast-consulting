@@ -6,108 +6,149 @@
     <title>Financial Data Consulting · ShipDataFast</title>
     <meta name="description" content="Data engineering, reconciliation and validation consulting for financial-system migrations, integrations and reporting inputs.">
     <link rel="canonical" href="https://shipdatafast.com/financial-services/">
-    <meta property="og:title" content="Financial Data Consulting · ShipDataFast">
-    <meta property="og:description" content="Data engineering, reconciliation and validation consulting for financial-system migrations, integrations and reporting inputs.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shipdatafast.com/financial-services/">
     <link rel="stylesheet" href="/assets/css/site.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://shipdatafast.com/"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Financial services",
-        "item": "https://shipdatafast.com/financial-services/"
-      }]
-    }
-    </script>
-      <script defer src="/assets/js/site-shell.js"></script>
-      <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="/assets/js/tailwind-theme.js"></script>
-    <style>
-      body {
-        background-color: #f5fbf4;
-        color: #171d19;
-        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-        -webkit-font-smoothing: antialiased;
-      }
-      .structural-rule { border-color: #171d19; }
-      .subtle-rule { border-color: #c4c5d8; }
-      .custom-scroll::-webkit-scrollbar { height: 4px; width: 4px; }
-      .custom-scroll::-webkit-scrollbar-thumb { background: #171d19; }
-    </style>
   </head>
-  <body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-[#D7FF3F] selection:text-on-surface">
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <div data-site-shell="header"></div>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand-wordmark" aria-label="ShipDataFast Home">ShipDataFast</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <details class="nav-disclosure" name="nav-menu">
+            <summary>Services</summary>
+            <div class="nav-dropdown">
+              <a href="/services/data-engineering/">Data Engineering</a>
+              <a href="/services/data-validation/">Data Validation</a>
+              <a href="/services/data-reconciliation/">Data Reconciliation</a>
+            </div>
+          </details>
+          <details class="nav-disclosure" name="nav-menu">
+            <summary>Products</summary>
+            <div class="nav-dropdown">
+              <a href="/products/">Products Overview</a>
+              <a href="/products/reconciliation/">Data Reconciliation</a>
+              <a href="/products/validation/">Data Validation</a>
+            </div>
+          </details>
+          <a href="/financial-services/" class="nav-link">Financial Services</a>
+          <a href="/about/" class="nav-link">About</a>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <a href="/contact/" class="btn-primary" style="display: none; @media(min-width: 900px){display: inline-flex;}">Discuss a data problem</a>
+          <div class="mobile-nav-toggle">
+            <details>
+              <summary>Menu</summary>
+              <div class="mobile-nav-panel">
+                <a href="/services/data-engineering/">Data Engineering</a>
+                <a href="/services/data-validation/">Data Validation</a>
+                <a href="/services/data-reconciliation/">Data Reconciliation</a>
+                <a href="/products/">Products Overview</a>
+                <a href="/products/reconciliation/">Data Reconciliation</a>
+                <a href="/products/validation/">Data Validation</a>
+                <a href="/financial-services/">Financial Services</a>
+                <a href="/about/">About</a>
+                <a href="/contact/" style="font-weight: 700; color: var(--blue);">Discuss a data problem</a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main id="main-content">
-      <section class="page-header">
-        <div class="site-width">
-          <ul class="breadcrumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li> / </li><li><span>Financial services</span></li></ul>
-          <div class="eyebrow">Financial services</div>
-          <h1>Financial data needs explainable answers.</h1>
-          <p class="page-intro">A particular focus on financial services and fintech, with the same engineering principles applying to data-intensive teams beyond this sector.</p>
+      <section class="section">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="/">Home</a> <span>/</span> <strong>Financial Services</strong>
+          </div>
+          <div class="eyebrow">SECTOR FOCUS</div>
+          <h1 class="h1-interior">Financial data needs explainable answers.</h1>
+          <p class="intro">Precision, auditability, and deterministic reconciliation for transactions, ledgers, and reporting feeds.</p>
         </div>
       </section>
 
-      <section>
-        <div class="site-width content-layout">
-          <div class="content-panel">
-            <h2>Sector problems</h2>
-            <ul>
-              <li>Which identifier matches from one ledger or feed to another?</li>
-              <li>Which currency and effective date applies to a conversion or settlement record?</li>
-              <li>How are rounding, reversals, late postings and unresolved differences handled?</li>
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">SECTOR CHALLENGES</div>
+            <h2>Where small errors create major exposure</h2>
+          </div>
+          <div>
+            <p>Financial integrations cannot tolerate rounding ambiguities or silent timing discrepancies. A mismatch in ledger records, delayed payment settlement, or an unexplained rounding variance can derail audits and disrupt operations.</p>
+            <p>We work with fintech and financial engineering teams to design deterministic checks that explain every penny across systems.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">ENGINEERING FOCUS</div>
+            <h2>Key technical considerations</h2>
+          </div>
+          <div>
+            <ul style="padding-left: 20px; line-height: 1.8;">
+              <li><strong>Effective dates vs transaction dates:</strong> Eliminating timing cut-off mismatches.</li>
+              <li><strong>Composite identifiers:</strong> Matching records across legacy core systems and modern APIs.</li>
+              <li><strong>Precision &amp; rounding:</strong> Enforcing strict decimal boundaries and currency normalization.</li>
+              <li><strong>Reversals &amp; late entries:</strong> Explicit exception logging for delayed records.</li>
             </ul>
           </div>
-          <aside class="content-panel">
-            <h3>Engineering questions</h3>
-            <p>These are engineering questions, not claims of regulatory approval, bank connectivity or compliance status. They guide how the data is mapped, checked and explained.</p>
-          </aside>
         </div>
       </section>
 
-      <section>
-        <div class="site-width two-column">
-          <div class="content-panel">
-            <h2>Illustrative example</h2>
-            <div class="table-scroll">
-              <table style="width:100%; border-collapse:collapse; min-width:420px;">
-                <thead><tr><th>Record</th><th>Source</th><th>Target</th><th>Interpretation</th></tr></thead>
-                <tbody>
-                  <tr><td>FT-201</td><td>USD 1,000.00</td><td>USD 1,001.00</td><td>Difference of 1.00</td></tr>
-                  <tr><td>FT-202</td><td>GBP 250.00</td><td>GBP 250.00</td><td>Match under selected rules</td></tr>
-                  <tr><td>FT-203</td><td>2026-09-08</td><td>2026-09-09</td><td>Potential timing discrepancy</td></tr>
-                </tbody>
-              </table>
-            </div>
+      <section class="section section-contact-close">
+        <div class="container editorial-5-7">
+          <div>
+            <h2>Discuss a financial data challenge</h2>
           </div>
-          <div class="content-panel">
-            <h2>Consulting approach</h2>
-            <p>ShipDataFast works on data mapping, rule definition, reconciliation and validation in a way that explains the why behind the difference. That same approach applies outside financial services where data quality and accountability matter.</p>
-            <p><a href="/about/">Meet the engineer behind ShipDataFast</a></p>
+          <div>
+            <p class="intro">Speak directly with an experienced data engineer about your systems and reconciliation criteria.</p>
+            <p style="margin-top: 24px;">
+              <a href="/contact/" class="btn-primary btn-white">Discuss a data problem</a>
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="site-width">
-          <a class="btn" href="/contact/">Discuss a data problem</a>
         </div>
       </section>
     </main>
-    <div data-site-shell="footer"></div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="/services/data-engineering/">Data Engineering</a></li>
+              <li><a href="/services/data-validation/">Data Validation</a></li>
+              <li><a href="/services/data-reconciliation/">Data Reconciliation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="/products/">Products Overview</a></li>
+              <li><a href="/products/reconciliation/">Data Reconciliation</a></li>
+              <li><a href="/products/validation/">Data Validation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About ShipDataFast</a></li>
+              <li><a href="/financial-services/">Financial Services</a></li>
+              <li><a href="/contact/">Discuss a data problem</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; ShipDataFast. Data engineering consulting and software.</div>
+          <div class="footer-legal-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/tos/">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

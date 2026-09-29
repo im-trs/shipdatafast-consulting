@@ -6,94 +6,158 @@
     <title>About ShipDataFast · Data Engineering Consultancy</title>
     <meta name="description" content="Meet the engineer behind ShipDataFast and explore the consulting approach and data software products.">
     <link rel="canonical" href="https://shipdatafast.com/about/">
-    <meta property="og:title" content="About ShipDataFast · Data Engineering Consultancy">
-    <meta property="og:description" content="Meet the engineer behind ShipDataFast and explore the consulting approach and data software products.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shipdatafast.com/about/">
     <link rel="stylesheet" href="/assets/css/site.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://shipdatafast.com/"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "About",
-        "item": "https://shipdatafast.com/about/"
-      }]
-    }
-    </script>
-      <script defer src="/assets/js/site-shell.js"></script>
-      <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="/assets/js/tailwind-theme.js"></script>
-    <style>
-      body {
-        background-color: #f5fbf4;
-        color: #171d19;
-        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-        -webkit-font-smoothing: antialiased;
-      }
-      .structural-rule { border-color: #171d19; }
-      .subtle-rule { border-color: #c4c5d8; }
-      .custom-scroll::-webkit-scrollbar { height: 4px; width: 4px; }
-      .custom-scroll::-webkit-scrollbar-thumb { background: #171d19; }
-    </style>
   </head>
-  <body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-[#D7FF3F] selection:text-on-surface">
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <div data-site-shell="header"></div>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand-wordmark" aria-label="ShipDataFast Home">ShipDataFast</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <details class="nav-disclosure" name="nav-menu">
+            <summary>Services</summary>
+            <div class="nav-dropdown">
+              <a href="/services/data-engineering/">Data Engineering</a>
+              <a href="/services/data-validation/">Data Validation</a>
+              <a href="/services/data-reconciliation/">Data Reconciliation</a>
+            </div>
+          </details>
+          <details class="nav-disclosure" name="nav-menu">
+            <summary>Products</summary>
+            <div class="nav-dropdown">
+              <a href="/products/">Products Overview</a>
+              <a href="/products/reconciliation/">Data Reconciliation</a>
+              <a href="/products/validation/">Data Validation</a>
+            </div>
+          </details>
+          <a href="/financial-services/" class="nav-link">Financial Services</a>
+          <a href="/about/" class="nav-link">About</a>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <a href="/contact/" class="btn-primary" style="display: none; @media(min-width: 900px){display: inline-flex;}">Discuss a data problem</a>
+          <div class="mobile-nav-toggle">
+            <details>
+              <summary>Menu</summary>
+              <div class="mobile-nav-panel">
+                <a href="/services/data-engineering/">Data Engineering</a>
+                <a href="/services/data-validation/">Data Validation</a>
+                <a href="/services/data-reconciliation/">Data Reconciliation</a>
+                <a href="/products/">Products Overview</a>
+                <a href="/products/reconciliation/">Data Reconciliation</a>
+                <a href="/products/validation/">Data Validation</a>
+                <a href="/financial-services/">Financial Services</a>
+                <a href="/about/">About</a>
+                <a href="/contact/" style="font-weight: 700; color: var(--blue);">Discuss a data problem</a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main id="main-content">
-      <section class="page-header">
-        <div class="site-width">
-          <ul class="breadcrumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li> / </li><li><span>About</span></li></ul>
-          <div class="eyebrow">About</div>
-          <h1>The engineering behind ShipDataFast.</h1>
-          <p class="page-intro">ShipDataFast. Data engineering consulting and software from TR Seeds Ltd.</p>
+      <section class="section">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="/">Home</a> <span>/</span> <strong>About</strong>
+          </div>
+          <div class="eyebrow">COMPANY &amp; FOUNDER</div>
+          <h1 class="h1-interior">The engineering behind ShipDataFast.</h1>
+          <p class="intro">ShipDataFast is a specialist data engineering consultancy founded to bring precision and deterministic testing to critical pipelines.</p>
         </div>
       </section>
 
-      <section>
-        <div class="site-width content-layout">
-          <div class="content-panel">
-            <h2>Company first</h2>
-            <p>ShipDataFast is a data engineering consulting company focused on making data flows easier to understand, validate and reconcile. The company works with teams dealing with source-to-target movement, data quality questions and differences between systems.</p>
+      <!-- Company first, Founder second per §14 -->
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">01 / THE COMPANY</div>
+            <h2>Specialist consultancy &amp; software tools</h2>
           </div>
-          <aside class="content-panel">
-            <h3>Founder</h3>
-            <p>Ivano Mannella is the founder and hands-on engineer behind ShipDataFast. The company’s public positioning reflects current consulting and product work without overstating any historical claim.</p>
-          </aside>
-        </div>
-      </section>
-
-      <section>
-        <div class="site-width two-column">
-          <div class="content-panel">
-            <h2>Relevant experience</h2>
-            <p>Specific claims should be grounded in concrete project work and recorded role context. Where dates or historical product work are discussed, they should remain attributable and separated from template or marketing history.</p>
-          </div>
-          <div class="content-panel">
-            <h2>Delivery model</h2>
-            <p>The delivery model is direct, practical and evidence-driven: define the data problem, map the movement, check the edge cases and hand over an understandable result with clear ownership.</p>
+          <div>
+            <p>ShipDataFast operates at the intersection of data engineering consulting and focused data integrity software. We help engineering teams build dependable data pipelines, validate inputs rigorously, and reconcile cross-system discrepancies.</p>
+            <p class="text-muted">Business identity: ShipDataFast. Data engineering consulting and software from TR Seeds Ltd.</p>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="site-width">
-          <a class="btn" href="/contact/">Discuss a data problem</a>
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">02 / THE FOUNDER</div>
+            <h2>Ivano Mannella</h2>
+          </div>
+          <div>
+            <p>Ivano is a hands-on data engineer and architect with direct experience delivering complex data integration, reconciliation, and validation projects—with particular focus on financial services environments.</p>
+            <p>Rather than providing generic advisory services, Ivano leads directly on architecture, test contracts, and implementation to ensure deliverables stand up to strict scrutiny.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">03 / DELIVERY MODEL</div>
+            <h2>How we deliver</h2>
+          </div>
+          <div>
+            <p>We work in bounded, high-impact consulting engagements with concrete deliverables: mapped schemas, reproducible automated checks, and clean handovers to your in-house engineers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact-close">
+        <div class="container editorial-5-7">
+          <div>
+            <h2>Have a project to discuss?</h2>
+          </div>
+          <div>
+            <p class="intro">Speak directly with Ivano about your pipeline challenges or reconciliation needs.</p>
+            <p style="margin-top: 24px;">
+              <a href="/contact/" class="btn-primary btn-white">Discuss a data problem</a>
+            </p>
+          </div>
         </div>
       </section>
     </main>
-    <div data-site-shell="footer"></div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="/services/data-engineering/">Data Engineering</a></li>
+              <li><a href="/services/data-validation/">Data Validation</a></li>
+              <li><a href="/services/data-reconciliation/">Data Reconciliation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="/products/">Products Overview</a></li>
+              <li><a href="/products/reconciliation/">Data Reconciliation</a></li>
+              <li><a href="/products/validation/">Data Validation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About ShipDataFast</a></li>
+              <li><a href="/financial-services/">Financial Services</a></li>
+              <li><a href="/contact/">Discuss a data problem</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; ShipDataFast. Data engineering consulting and software.</div>
+          <div class="footer-legal-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/tos/">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

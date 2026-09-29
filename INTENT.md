@@ -1,4 +1,4 @@
-# DESIGN.md · ShipDataFast
+# INTENT.md · ShipDataFast
 
 **A new consulting-company website. HTML, CSS and SEO first.**
 

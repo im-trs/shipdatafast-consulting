@@ -6,113 +6,163 @@
     <title>Data Validation Consulting · ShipDataFast</title>
     <meta name="description" content="Define data requirements and implement repeatable validation checks. Explore ShipDataFast consulting for reliable data delivery.">
     <link rel="canonical" href="https://shipdatafast.com/services/data-validation/">
-    <meta property="og:title" content="Data Validation Consulting · ShipDataFast">
-    <meta property="og:description" content="Define data requirements and implement repeatable validation checks. Explore ShipDataFast consulting for reliable data delivery.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shipdatafast.com/services/data-validation/">
     <link rel="stylesheet" href="/assets/css/site.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://shipdatafast.com/"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://shipdatafast.com/services/data-validation/"
-      }]
-    }
-    </script>
-      <script defer src="/assets/js/site-shell.js"></script>
-      <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="/assets/js/tailwind-theme.js"></script>
-    <style>
-      body {
-        background-color: #f5fbf4;
-        color: #171d19;
-        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-        -webkit-font-smoothing: antialiased;
-      }
-      .structural-rule { border-color: #171d19; }
-      .subtle-rule { border-color: #c4c5d8; }
-      .custom-scroll::-webkit-scrollbar { height: 4px; width: 4px; }
-      .custom-scroll::-webkit-scrollbar-thumb { background: #171d19; }
-    </style>
   </head>
-  <body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-[#D7FF3F] selection:text-on-surface">
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <div data-site-shell="header"></div>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand-wordmark" aria-label="ShipDataFast Home">ShipDataFast</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <details class="nav-disclosure" name="nav-menu">
+            <summary>Services</summary>
+            <div class="nav-dropdown">
+              <a href="/services/data-engineering/">Data Engineering</a>
+              <a href="/services/data-validation/">Data Validation</a>
+              <a href="/services/data-reconciliation/">Data Reconciliation</a>
+            </div>
+          </details>
+          <details class="nav-disclosure" name="nav-menu">
+            <summary>Products</summary>
+            <div class="nav-dropdown">
+              <a href="/products/">Products Overview</a>
+              <a href="/products/reconciliation/">Data Reconciliation</a>
+              <a href="/products/validation/">Data Validation</a>
+            </div>
+          </details>
+          <a href="/financial-services/" class="nav-link">Financial Services</a>
+          <a href="/about/" class="nav-link">About</a>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <a href="/contact/" class="btn-primary" style="display: none; @media(min-width: 900px){display: inline-flex;}">Discuss a data problem</a>
+          <div class="mobile-nav-toggle">
+            <details>
+              <summary>Menu</summary>
+              <div class="mobile-nav-panel">
+                <a href="/services/data-engineering/">Data Engineering</a>
+                <a href="/services/data-validation/">Data Validation</a>
+                <a href="/services/data-reconciliation/">Data Reconciliation</a>
+                <a href="/products/">Products Overview</a>
+                <a href="/products/reconciliation/">Data Reconciliation</a>
+                <a href="/products/validation/">Data Validation</a>
+                <a href="/financial-services/">Financial Services</a>
+                <a href="/about/">About</a>
+                <a href="/contact/" style="font-weight: 700; color: var(--blue);">Discuss a data problem</a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main id="main-content">
-      <section class="page-header">
-        <div class="site-width">
-          <ul class="breadcrumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li> / </li><li><span>Data validation</span></li></ul>
-          <div class="eyebrow">Data validation consulting</div>
-          <h1>Turn data requirements into repeatable checks.</h1>
-          <p class="page-intro">Validation is the process of checking data against defined requirements so the problem is visible before that data is trusted or passed on.</p>
+      <section class="section">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="/">Home</a> <span>/</span> <a href="/">Services</a> <span>/</span> <strong>Data Validation</strong>
+          </div>
+          <div class="eyebrow">CONSULTING SERVICES</div>
+          <h1 class="h1-interior">Turn data requirements into repeatable checks.</h1>
+          <p class="intro">Define explicit validation rules and implement automated verification before bad data pollutes downstream operations.</p>
         </div>
       </section>
 
-      <section>
-        <div class="site-width content-layout">
-          <div class="content-panel">
-            <h2>Failure scenarios</h2>
-            <ul>
-              <li>Required values are missing or incomplete.</li>
-              <li>Ranges, types or calculation rules are violated.</li>
-              <li>Duplicates, invalid codes or inconsistent references are not caught early enough.</li>
+      <!-- Section per INTENT §10 -->
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">THE CHALLENGE</div>
+            <h2>Preventing silent data corruption</h2>
+          </div>
+          <div>
+            <p>Data validation evaluates whether a given dataset satisfies its explicit contracts—such as mandatory attributes, allowed category enumerations, numerical bounds, and cross-record uniqueness.</p>
+            <p>Without automated checks, invalid entries pass silently into downstream analytics and core transactional systems, creating expensive corrections later.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">SCOPE &amp; TOPICS</div>
+            <h2>Candidate validation scope</h2>
+          </div>
+          <div>
+            <ul style="padding-left: 20px; line-height: 1.8;">
+              <li><strong>Mandatory presence:</strong> Identifying null or empty values where business rules require data.</li>
+              <li><strong>Type &amp; Format:</strong> Validating dates, ISO timestamps, currency codes, and string patterns.</li>
+              <li><strong>Range &amp; Bounds:</strong> Enforcing numeric thresholds, zero-floors, and percentage limits.</li>
+              <li><strong>Uniqueness &amp; Keys:</strong> Enforcing primary key integrity and identifying duplicate records.</li>
             </ul>
           </div>
-          <aside class="content-panel">
-            <h3>Consulting shape</h3>
-            <p>Validation work may cover required values, types, uniqueness, ranges, allowed values and cross-field consistency. These are consulting scope candidates, not automatic product endorsement.</p>
-          </aside>
         </div>
       </section>
 
-      <section>
-        <div class="site-width two-column">
-          <div class="content-panel">
-            <h2>Rule definition and execution</h2>
-            <p>ShipDataFast helps define the rules, implement the checks in the most practical form for the environment and turn the result into actionable findings. The goal is to make validation repeatable rather than manual.</p>
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">SOFTWARE CONNECTION</div>
+            <h2>Data Validation tool</h2>
           </div>
-          <div class="content-panel">
-            <h2>Example findings</h2>
-            <p>Example findings include a missing customer identifier, a negative amount, or a record that fails a value constraint. The output should record which record failed, which rule was breached and why the result matters to downstream consumption.</p>
+          <div>
+            <p>We build on our proprietary validation methodologies and our dedicated software tool to accelerate implementation.</p>
+            <p><a href="/products/validation/">Explore Data Validation Software &rarr;</a></p>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="site-width">
-          <div class="content-panel">
-            <h2>Deliverables</h2>
-            <ul>
-              <li>Agreed rules and validation scope.</li>
-              <li>Executable checks or test logic.</li>
-              <li>Actionable findings and documentation.</li>
-              <li>Instructions for running and maintaining the checks.</li>
-            </ul>
-            <p><a href="/products/validation/">Explore Data Validation</a></p>
+      <section class="section section-contact-close">
+        <div class="container editorial-5-7">
+          <div>
+            <h2>Discuss validation consulting</h2>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="site-width">
-          <a class="btn" href="/contact/">Discuss a data problem</a>
+          <div>
+            <p class="intro">Let's discuss how to turn your data acceptance criteria into repeatable checks.</p>
+            <p style="margin-top: 24px;">
+              <a href="/contact/" class="btn-primary btn-white">Discuss a data problem</a>
+            </p>
+          </div>
         </div>
       </section>
     </main>
-    <div data-site-shell="footer"></div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="/services/data-engineering/">Data Engineering</a></li>
+              <li><a href="/services/data-validation/">Data Validation</a></li>
+              <li><a href="/services/data-reconciliation/">Data Reconciliation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="/products/">Products Overview</a></li>
+              <li><a href="/products/reconciliation/">Data Reconciliation</a></li>
+              <li><a href="/products/validation/">Data Validation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About ShipDataFast</a></li>
+              <li><a href="/financial-services/">Financial Services</a></li>
+              <li><a href="/contact/">Discuss a data problem</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; ShipDataFast. Data engineering consulting and software.</div>
+          <div class="footer-legal-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/tos/">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
