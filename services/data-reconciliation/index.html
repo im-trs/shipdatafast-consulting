@@ -135,6 +135,121 @@
         </div>
       </section>
 
+      <!-- Tangible Reconciliation Mechanism Example (§4 Proof Asset) -->
+      <section class="section" id="mechanism-example" style="background: var(--paper);">
+        <div class="container">
+          <div style="margin-bottom: 24px;">
+            <div class="eyebrow" style="color: var(--blue);">WORKED RECONCILIATION MECHANISM</div>
+            <h2>How reconciliation works in practice: an end-to-end example</h2>
+            <p class="intro">A tangible specimen demonstrating our core verification mechanism: how raw records move from source through transformation mappings into target stores, where discrepancies emerge, and how each is deterministically diagnosed.</p>
+          </div>
+
+          <!-- Step 1 & 2: Source Schema, Mapping Contract & Target Schema -->
+          <div style="display: grid; grid-template-columns: 1fr; gap: 24px; margin-bottom: 32px;">
+            <div style="background: var(--white); border: 1px solid var(--ink); padding: 24px;">
+              <h3 style="font-size: 18px; margin-bottom: 12px; color: var(--blue);">1. The Source &amp; Mapping Contract</h3>
+              <p style="margin-bottom: 12px;"><strong>Source:</strong> Core Banking Trading OLTP (Postgres / SQL extract).<br>
+              <strong>Target:</strong> General Ledger &amp; Regulatory Reporting Store (Snowflake / Analytical Warehouse).</p>
+              <div style="background: var(--paper); border: 1px solid var(--line); padding: 16px; font-family: var(--font-data); font-size: 13px; line-height: 1.6;">
+                <strong>Transformation &amp; Mapping Contract:</strong><br>
+                &bull; Primary Reconciliation Key: <code>TRX_ID</code> &rarr; <code>TRANSACTION_REF</code><br>
+                &bull; Value Mapping: <code>AMOUNT_RAW</code> rounded to 2 decimal places &rarr; <code>POSTED_AMOUNT</code><br>
+                &bull; Cut-Off Window: Calendar day cut-off at <code>23:59:59 UTC</code> (records after 00:00 UTC post to next business day)<br>
+                &bull; Instrument Mapping: Source legacy codes (<code>FX_FWD</code>, <code>EQ_SWP</code>) mapped to ISO 20022 taxonomy in Target
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Reconciliation Comparison Specimen Table -->
+          <div style="background: var(--white); border: 1px solid var(--ink); padding: 24px; margin-bottom: 32px;">
+            <h3 style="font-size: 18px; margin-bottom: 8px;">2. Source &rarr; Mapping &rarr; Target Comparison Matrix</h3>
+            <p class="text-muted" style="margin-bottom: 16px;">Deterministic reconciliation run across sample portfolio cohort (4 sample records, 3 mismatches isolated):</p>
+            
+            <div class="table-container">
+              <table class="data-table" aria-label="Reconciliation Mechanism Specimen Table">
+                <thead>
+                  <tr>
+                    <th scope="col">Transaction Key</th>
+                    <th scope="col">Source Record</th>
+                    <th scope="col">Transformation Rule</th>
+                    <th scope="col">Target Ledger Record</th>
+                    <th scope="col">Reconciliation Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>TRX-9401</code></td>
+                    <td>EUR 124,500.00<br><span style="font-size: 11px; color: var(--muted);">TS: 14:22:05 UTC | Code: EQ_SWP</span></td>
+                    <td>1:1 Direct Post<br><span style="font-size: 11px; color: var(--muted);">ISO: SWAP_EQ</span></td>
+                    <td>EUR 124,500.00<br><span style="font-size: 11px; color: var(--muted);">ISO: SWAP_EQ</span></td>
+                    <td><span class="status-match">Match (Clean)</span></td>
+                  </tr>
+                  <tr style="background: #fdf8f6;">
+                    <td><code>TRX-9402</code></td>
+                    <td>USD 84,210.456<br><span style="font-size: 11px; color: var(--muted);">Float precision 3dp</span></td>
+                    <td>Half-Up Rounding to 2dp<br><span style="font-size: 11px; color: var(--muted);">Expected: USD 84,210.46</span></td>
+                    <td>USD 84,210.45<br><span style="font-size: 11px; color: var(--error);">Truncated (0.01 variance)</span></td>
+                    <td><span class="status-diff">Mismatch #1: Rounding Variance</span></td>
+                  </tr>
+                  <tr style="background: #fdf8f6;">
+                    <td><code>TRX-9403</code></td>
+                    <td>GBP 350,000.00<br><span style="font-size: 11px; color: var(--muted);">TS: 23:59:58 UTC (Day T)</span></td>
+                    <td>Target Cut-off: 23:59:59 UTC<br><span style="font-size: 11px; color: var(--muted);">Expected in Day T Batch</span></td>
+                    <td><em>Absent in Day T</em><br><span style="font-size: 11px; color: var(--error);">Shifted to Day T+1 batch</span></td>
+                    <td><span class="status-diff">Mismatch #2: Timing Cut-Off Lag</span></td>
+                  </tr>
+                  <tr style="background: #fdf8f6;">
+                    <td><code>TRX-9404</code></td>
+                    <td>CHF 15,200.00<br><span style="font-size: 11px; color: var(--muted);">Code: <code>FX_FWD_ND</code> (Non-deliverable)</span></td>
+                    <td>ISO 20022 Mapping Table<br><span style="font-size: 11px; color: var(--muted);">Requires code <code>FWD_NDF</code></span></td>
+                    <td><em>Unprocessed / Unjoined</em><br><span style="font-size: 11px; color: var(--error);">Rejected by target ingest schema</span></td>
+                    <td><span class="status-diff">Mismatch #3: Schema &amp; Key Rejection</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Step 4: Discrepancy Diagnostics & Explanations -->
+          <div style="background: var(--white); border: 1px solid var(--ink); padding: 24px;">
+            <h3 style="font-size: 18px; margin-bottom: 16px;">3. Discrepancy Analysis &amp; Diagnostic Explanations</h3>
+            <p style="margin-bottom: 20px;">Instead of vague error alerts, our reconciliation workflow isolates each exception to its root engineering cause with actionable remediation:</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+              <div style="border-left: 3px solid var(--error); padding: 14px 18px; background: var(--paper);">
+                <div style="font-weight: 700; color: var(--ink); margin-bottom: 4px;">
+                  Mismatch #1: Precision Truncation vs Banker's Rounding (TRX-9402)
+                </div>
+                <p style="margin: 0; font-size: 14px; line-height: 1.6;">
+                  <strong>Mechanism &amp; Explanation:</strong> The target ETL pipeline used integer bitwise truncation (<code>CAST AS NUMERIC(18,2)</code> in legacy SQL without explicit rounding mode), stripping the third decimal instead of applying half-up rounding. Over millions of daily micro-transactions, this produces systematic unbalancing in downstream financial general ledgers.<br>
+                  <strong>Fix:</strong> Enforce deterministic banker's rounding (<code>ROUND_HALF_EVEN</code>) in the ingestion contract before target persistence.
+                </p>
+              </div>
+
+              <div style="border-left: 3px solid var(--error); padding: 14px 18px; background: var(--paper);">
+                <div style="font-weight: 700; color: var(--ink); margin-bottom: 4px;">
+                  Mismatch #2: Boundary Cut-Off Timing Asynchrony (TRX-9403)
+                </div>
+                <p style="margin: 0; font-size: 14px; line-height: 1.6;">
+                  <strong>Mechanism &amp; Explanation:</strong> Source executed trade at 23:59:58 UTC. Due to a 4-second replication queue latency across the message broker, the target ingest pipeline stamped arrival at 00:00:02 UTC and partitioned the record into Day T+1. The trade was not lost, but Day T balance showed a £350,000 shortfall and Day T+1 showed a matching surplus.<br>
+                  <strong>Fix:</strong> Bind reconciliation windows to the source transaction execution timestamp rather than consumer pipeline arrival timestamp.
+                </p>
+              </div>
+
+              <div style="border-left: 3px solid var(--error); padding: 14px 18px; background: var(--paper);">
+                <div style="font-weight: 700; color: var(--ink); margin-bottom: 4px;">
+                  Mismatch #3: Unmapped Enumeration / Schema Drift Rejection (TRX-9404)
+                </div>
+                <p style="margin: 0; font-size: 14px; line-height: 1.6;">
+                  <strong>Mechanism &amp; Explanation:</strong> The legacy source introduced a variant instrument code <code>FX_FWD_ND</code> that was absent from the target warehouse lookup dictionary. The strict target schema rejected the entire row into a dead-letter queue without throwing a fatal pipeline exception, leaving the target ledger silently short CHF 15,200.<br>
+                  <strong>Fix:</strong> Update reference mapping enum dictionary and add automated dead-letter queue intake validation alerts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Migration Assurance Anchor Section (§5 & §9) -->
       <section class="section" id="migration-assurance">
         <div class="container editorial-5-7">

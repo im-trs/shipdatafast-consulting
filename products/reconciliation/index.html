@@ -133,6 +133,19 @@
             </table>
           </div>
           <p style="font-family: var(--font-data); font-size: 13px; color: var(--muted); margin-top: 12px;">Three source records, three target records, four distinct keys, one matched record and three exception records. Note: absent records are treated distinctly from null values.</p>
+
+          <!-- 3 Mismatches Explanation -->
+          <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr; gap: 12px;">
+            <div style="padding: 12px 16px; background: var(--paper); border-left: 3px solid var(--error); font-size: 13px;">
+              <strong>TX-101 (Value difference: +1.00):</strong> Source recorded 49.95; target ledger posted 50.95. Root cause: Target pipeline incorrectly added a legacy fixed handling fee rather than reading source post-discount net balance.
+            </div>
+            <div style="padding: 12px 16px; background: var(--paper); border-left: 3px solid var(--error); font-size: 13px;">
+              <strong>TX-102 (Missing in target / Source only):</strong> Present in core transaction DB but unposted in target. Root cause: Transaction arrived within the last 5 seconds of the daily cut-off window and was delayed by the ingestion broker queue into the following date batch.
+            </div>
+            <div style="padding: 12px 16px; background: var(--paper); border-left: 3px solid var(--error); font-size: 13px;">
+              <strong>TX-103 (Unmatched in source / Target only):</strong> Present in target analytical warehouse without source row match. Root cause: An upstream refund adjustment event produced a separate target line item using a synthetic key instead of referencing original parent TX-100.
+            </div>
+          </div>
         </div>
       </section>
 
