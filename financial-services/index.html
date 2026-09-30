@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Data Consulting · ShipDataFast</title>
-    <meta name="description" content="Data engineering, reconciliation and validation consulting for financial-system migrations, integrations and reporting inputs.">
+    <title>Financial Data Reconciliation &amp; Migration Assurance · ShipDataFast</title>
+    <meta name="description" content="ShipDataFast helps financial institutions, fintechs and engineering teams prove data remains complete and correct across migrations, integrations and ledgers.">
+    <meta property="og:title" content="Financial Data Reconciliation &amp; Migration Assurance · ShipDataFast">
+    <meta property="og:description" content="ShipDataFast helps financial institutions, fintechs and engineering teams prove data remains complete and correct across migrations, integrations and ledgers.">
     <meta property="og:image" content="https://shipdatafast.com/assets/img/og-image.svg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://shipdatafast.com/assets/img/og-image.svg">
@@ -22,37 +24,36 @@
           <details class="nav-disclosure" name="nav-menu">
             <summary>Services</summary>
             <div class="nav-dropdown">
-              <a href="../services/data-engineering/">Data Engineering</a>
-              <a href="../services/data-validation/">Data Validation</a>
               <a href="../services/data-reconciliation/">Data Reconciliation</a>
+              <a href="../services/data-reconciliation/#migration-assurance">Migration Assurance</a>
+              <a href="../services/data-engineering/">Data Validation &amp; Engineering</a>
             </div>
           </details>
           <details class="nav-disclosure" name="nav-menu">
             <summary>Products</summary>
             <div class="nav-dropdown">
-              <a href="../products/">Products Overview</a>
-              <a href="../products/reconciliation/">Data Reconciliation</a>
+              <a href="../products/reconciliation/">Reconciliation Engine</a>
               <a href="../products/validation/">Data Validation</a>
+              <a href="../products/">Products Overview</a>
             </div>
           </details>
           <a href="../financial-services/" class="nav-link">Financial Services</a>
           <a href="../about/" class="nav-link">About</a>
         </nav>
         <div style="display: flex; align-items: center; gap: 16px;">
-          <a href="../contact/" class="btn-primary" style="display: none; @media(min-width: 900px){display: inline-flex;}">Discuss a data problem</a>
+          <a href="../contact/" class="btn-primary" style="display: none; @media(min-width: 900px){display: inline-flex;}">Discuss a reconciliation</a>
           <div class="mobile-nav-toggle">
             <details>
               <summary>Menu</summary>
               <div class="mobile-nav-panel">
-                <a href="../services/data-engineering/">Data Engineering</a>
-                <a href="../services/data-validation/">Data Validation</a>
                 <a href="../services/data-reconciliation/">Data Reconciliation</a>
-                <a href="../products/">Products Overview</a>
-                <a href="../products/reconciliation/">Data Reconciliation</a>
+                <a href="../services/data-reconciliation/#migration-assurance">Migration Assurance</a>
+                <a href="../services/data-engineering/">Data Validation &amp; Engineering</a>
+                <a href="../products/reconciliation/">Reconciliation Engine</a>
                 <a href="../products/validation/">Data Validation</a>
                 <a href="../financial-services/">Financial Services</a>
                 <a href="../about/">About</a>
-                <a href="../contact/" style="font-weight: 700; color: var(--blue);">Discuss a data problem</a>
+                <a href="../contact/" style="font-weight: 700; color: var(--blue);">Discuss a reconciliation</a>
               </div>
             </details>
           </div>
@@ -66,51 +67,122 @@
           <div class="breadcrumbs">
             <a href="../">Home</a> <span>/</span> <strong>Financial Services</strong>
           </div>
-          <div class="eyebrow">SECTOR FOCUS</div>
-          <h1 class="h1-interior">Financial data needs explainable answers.</h1>
-          <p class="intro">Precision, auditability, and deterministic reconciliation for transactions, ledgers, and reporting feeds.</p>
+          <div class="eyebrow">FINANCIAL DATA RECONCILIATION</div>
+          <h1 class="h1-interior">Financial data cannot be "probably correct."</h1>
+          <p class="intro">ShipDataFast helps financial institutions, fintechs and financial technology teams prove that data remains complete and correct across migrations, integrations and operational systems.</p>
         </div>
       </section>
 
+      <!-- 01 / Trading & Investment Systems -->
       <section class="section">
         <div class="container editorial-5-7">
           <div>
-            <div class="eyebrow">SECTOR CHALLENGES</div>
-            <h2>Where small errors create major exposure</h2>
+            <div class="eyebrow">01 / TRADING &amp; INVESTMENT</div>
+            <h2>Trading and investment platforms</h2>
           </div>
           <div>
-            <p>Financial integrations cannot tolerate rounding ambiguities or silent timing discrepancies. A mismatch in ledger records, delayed payment settlement, or an unexplained rounding variance can derail audits and disrupt operations.</p>
-            <p>We work with fintech and financial engineering teams to design deterministic checks that explain every penny across systems.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container editorial-5-7">
-          <div>
-            <div class="eyebrow">ENGINEERING FOCUS</div>
-            <h2>Key technical considerations</h2>
-          </div>
-          <div>
-            <ul style="padding-left: 20px; line-height: 1.8;">
-              <li><strong>Effective dates vs transaction dates:</strong> Eliminating timing cut-off mismatches.</li>
-              <li><strong>Composite identifiers:</strong> Matching records across legacy core systems and modern APIs.</li>
-              <li><strong>Precision &amp; rounding:</strong> Enforcing strict decimal boundaries and currency normalization.</li>
-              <li><strong>Reversals &amp; late entries:</strong> Explicit exception logging for delayed records.</li>
+            <p>Moving between portfolio management systems, order management platforms, or risk engines introduces severe data risk. When positions don't balance or cash flows diverge, trading desks and compliance officers face immediate operational exposure.</p>
+            <p><strong>Core scenarios we reconcile:</strong></p>
+            <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 16px;">
+              <li><strong>Platform cutovers:</strong> Comprehensive verification between legacy systems and replacement platforms.</li>
+              <li><strong>Open positions &amp; lots:</strong> Multi-asset position reconciliation, tax-lot continuity, and cost-basis integrity.</li>
+              <li><strong>Transaction history:</strong> Trades, executions, corporate actions, and dividend adjustments.</li>
+              <li><strong>Valuations &amp; NAV calculations:</strong> Catching subtle rounding differences and pricing feed timing gaps.</li>
+              <li><strong>Downstream reporting feeds:</strong> Confirming risk systems and client valuation statements receive pristine inputs.</li>
             </ul>
           </div>
         </div>
       </section>
 
+      <!-- 02 / Market and Reference Data -->
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">02 / MARKET &amp; REFERENCE DATA</div>
+            <h2>Market and reference data</h2>
+          </div>
+          <div>
+            <p>External feeds evolve constantly. Upstream schema adjustments, missing identifier tags, and ticker changes trigger silent mapping failures in downstream engines.</p>
+            <p><strong>Core scenarios we reconcile:</strong></p>
+            <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 16px;">
+              <li><strong>Vendor feed integrations:</strong> Validating daily market feeds against internal golden-copy repositories.</li>
+              <li><strong>Security master updates:</strong> Cross-referencing ISIN, CUSIP, SEDOL, and FIGI symbology across disparate vendors.</li>
+              <li><strong>Corporate action adjustments:</strong> Reconciling stock splits, mergers, and spin-off adjustments across systems.</li>
+              <li><strong>Timing cut-offs:</strong> Resolving asynchronous publication differences and timezone boundaries.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 / Ledgers and Transactional Systems -->
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">03 / LEDGERS &amp; CORE BANKING</div>
+            <h2>Ledgers and transactional systems</h2>
+          </div>
+          <div>
+            <p>A double-entry ledger cannot tolerate rounding ambiguities or missing entries. When balancing payment rails, clearing feeds, or subledgers against general ledgers, every cent must be deterministically accounted for.</p>
+            <p><strong>Core scenarios we reconcile:</strong></p>
+            <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 16px;">
+              <li><strong>Payment rail reconciliation:</strong> Validating transactions across internal journals, gateways, and clearing rails.</li>
+              <li><strong>Subledger to General Ledger:</strong> Detecting unbalanced batches, timing delays, and unposted journal records.</li>
+              <li><strong>Multi-currency balances:</strong> Normalizing FX rates, conversion timestamps, and currency cut-offs.</li>
+              <li><strong>Duplicate &amp; reversal handling:</strong> Distinguishing intentional reversal entries from accidental double-processing.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 / Data Platforms & Migration Pipelines -->
+      <section class="section">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">04 / DATA PLATFORMS</div>
+            <h2>Data platforms &amp; cloud migrations</h2>
+          </div>
+          <div>
+            <p>Migrating from on-premise operational databases to cloud data warehouses requires mathematical proof that pipeline transformations preserved row counts and business semantics.</p>
+            <p><strong>Core scenarios we reconcile:</strong></p>
+            <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 16px;">
+              <li><strong>Source-to-warehouse migrations:</strong> Verifying ETL/ELT pipelines from transactional engines into analytical stores.</li>
+              <li><strong>Database engine upgrades:</strong> Proving zero data corruption during version or engine cutovers.</li>
+              <li><strong>Transformation regression testing:</strong> Confirming modified dbt, SQL, or pipeline code doesn't distort historical figures.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Mechanics Section -->
+      <section class="section" style="background: var(--white);">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow">ENGINEERING MECHANICS</div>
+            <h2>How complex matching actually works</h2>
+          </div>
+          <div>
+            <p class="intro">Simple primary key joins fail in financial systems. Real-world financial reconciliation requires specialized matching engineering:</p>
+            <ul style="padding-left: 20px; line-height: 1.8;">
+              <li><strong>Composite identifiers:</strong> Joining records when no single unified ID exists across legacy and modern APIs.</li>
+              <li><strong>Mapping &amp; normalization tables:</strong> Translating disparate internal codes, transaction types, and account structures.</li>
+              <li><strong>Effective dates vs transaction dates:</strong> Distinguishing booking times, trade dates, and settlement cut-offs.</li>
+              <li><strong>Tolerance rules:</strong> Applying explicit epsilon boundaries for floating-point calculations vs strict integer penny matching.</li>
+              <li><strong>Exception classification:</strong> Separating genuine missing rows from timing lags, transformed codes, and value shifts.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Close -->
       <section class="section section-contact-close">
         <div class="container editorial-5-7">
           <div>
-            <h2>Discuss a financial data challenge</h2>
+            <h2>Discuss a financial reconciliation challenge</h2>
           </div>
           <div>
-            <p class="intro">Speak directly with an experienced data engineer about your systems and reconciliation criteria.</p>
+            <p class="intro">Speak directly with senior data engineers about your systems, migration timeline, and reconciliation criteria.</p>
             <p style="margin-top: 24px;">
-              <a href="../contact/" class="btn-primary btn-white">Discuss a data problem</a>
+              <a href="../contact/" class="btn-primary btn-white">Discuss a reconciliation</a>
             </p>
           </div>
         </div>
@@ -123,17 +195,17 @@
           <div class="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="../services/data-engineering/">Data Engineering</a></li>
-              <li><a href="../services/data-validation/">Data Validation</a></li>
               <li><a href="../services/data-reconciliation/">Data Reconciliation</a></li>
+              <li><a href="../services/data-reconciliation/#migration-assurance">Migration Assurance</a></li>
+              <li><a href="../services/data-engineering/">Data Validation &amp; Engineering</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Products</h4>
             <ul>
-              <li><a href="../products/">Products Overview</a></li>
-              <li><a href="../products/reconciliation/">Data Reconciliation</a></li>
+              <li><a href="../products/reconciliation/">Reconciliation Engine</a></li>
               <li><a href="../products/validation/">Data Validation</a></li>
+              <li><a href="../products/">Products Overview</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -141,12 +213,12 @@
             <ul>
               <li><a href="../about/">About ShipDataFast</a></li>
               <li><a href="../financial-services/">Financial Services</a></li>
-              <li><a href="../contact/">Discuss a data problem</a></li>
+              <li><a href="../contact/">Discuss a reconciliation</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <div>&copy; ShipDataFast. Data engineering consulting and software.</div>
+          <div>&copy; ShipDataFast. Financial data reconciliation and migration assurance.</div>
           <div class="footer-legal-links">
             <a href="../privacy-policy/">Privacy Policy</a>
             <a href="../tos/">Terms of Service</a>

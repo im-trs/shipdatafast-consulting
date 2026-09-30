@@ -1,37 +1,71 @@
-# ShipDataFast · Data Engineering Consulting
+# ShipDataFast · Financial Data Reconciliation & Migration Assurance
 
-> Specialist data engineering consultancy helping engineering teams build reliable data flows, validate critical datasets, and reconcile differences between systems.
+> ShipDataFast is a specialist financial data reconciliation and migration-assurance consultancy helping organisations verify that critical data remains complete and correct across system migrations, integrations and operational platforms.
 
 ## Summary
 
-ShipDataFast is an independent engineering consultancy founded by Ivano Mannella (TR Seeds Ltd), focusing on high-stakes data integrity across database migrations, core transaction processing, and system integrations. We offer hands-on data engineering consulting and two specialized software offerings: Data Reconciliation and Data Validation.
+ShipDataFast helps financial-services institutions, fintechs, and technical data teams prove that data has moved correctly between systems. We combine senior consulting expertise with automated reconciliation engineering and proprietary local-first tooling to detect missing, corrupted, duplicate, and mismatched records before they become production problems.
+
+The consultancy is the core business. Our reconciliation and validation tools support consulting delivery and can also operate as software products within client-controlled environments.
 
 ## Canonical Identity & Entity Signals
 - **Entity**: ShipDataFast (Trading entity of TR Seeds Ltd)
-- **Founder & Lead Engineer**: Ivano Mannella
+- **Primary Business Classification**: Financial Data Reconciliation and Migration Assurance Consultancy
+- **Founder & Lead Data Engineer**: Ivano Mannella
 - **Official Profiles**:
   - GitHub: https://github.com/im-trs
   - LinkedIn: https://www.linkedin.com/in/ivanomannella/
 - **Official Contact**: info@shipdatafast.com
 
-## Core Offerings
+## Core Practice Areas
 
-### Consulting Services
-- [Data Engineering](https://shipdatafast.com/services/data-engineering/): Architecture, integration contracts, transformation pipelines, and traceable handovers.
-- [Data Validation](https://shipdatafast.com/services/data-validation/): Turning business data requirements into repeatable automated assertion checks.
-- [Data Reconciliation](https://shipdatafast.com/services/data-reconciliation/): Defining matching contracts, timing cut-offs, and investigating cross-system differences.
+### 01 / Data Reconciliation Consulting
+Comparing source and target systems deterministically and explaining every mismatch.
+- System & platform migration reconciliation
+- Ledger and transaction reconciliation
+- Multi-party payment and settlement reconciliation
+- Source-to-target mapping & comparison contracts
+- Exception classification (missing, transformed, timing, value differences)
+- Link: https://shipdatafast.com/services/data-reconciliation/
 
-### Software Offerings
-- [Data Reconciliation](https://shipdatafast.com/products/reconciliation/): Comparison software answering "Where do these datasets disagree?" across two corresponding sources under explicit matching and tolerance rules.
-- [Data Validation](https://shipdatafast.com/products/validation/): Rules-based evaluation answering "Does this data satisfy its rules?" for single datasets against mandatory presence, format patterns, and bounds.
+### 02 / Migration Assurance
+Proving data survives migration, transformations, and cutovers intact.
+- Completeness and volume checks (e.g. proving all records arrived)
+- Transformation validation across disparate source and target schemas
+- Pre-cutover and post-cutover verification
+- Aggregate ledger and record-level discrepancy analysis
+- Link: https://shipdatafast.com/services/data-reconciliation/
 
-## Key Facts & Operational Principles
-- **Data Security**: Zero-trust, client-controlled architecture. No customer records or credentials are sent to external cloud platforms.
-- **Auditable Outputs**: Every mismatch traces directly to explicit inputs and configured matching rules.
-- **Sector Focus**: Financial services and fintech transaction reconciliation, applicable to all data-intensive systems.
+### 03 / Data Validation & Engineering
+Building automated controls, assertions, and pipelines around critical financial data flows.
+- Intake schema validation and mandatory business-rule assertion
+- Data quality automation and pipeline regression checks
+- Integration contracts for decoupled systems
+- Link: https://shipdatafast.com/services/data-engineering/
+- Link: https://shipdatafast.com/services/data-validation/
 
-## Key Links
-- [About ShipDataFast & Founder](https://shipdatafast.com/about/)
-- [Financial Services Experience](https://shipdatafast.com/financial-services/)
-- [Contact / Discuss a Data Problem](https://shipdatafast.com/contact/)
-- [Email](mailto:info@shipdatafast.com)
+## Specialized Software Products
+- **ShipDataFast Reconciliation Engine**: Purpose-built software answering "Where do these datasets disagree?" across corresponding datasets using explicit matching keys, normalization, and numeric tolerance rules.
+  - Link: https://shipdatafast.com/products/reconciliation/
+- **ShipDataFast Data Validation**: Rule-based evaluation answering "Does this data satisfy its rules?" for single datasets against mandatory presence, patterns, and range bounds.
+  - Link: https://shipdatafast.com/products/validation/
+
+## Operational Principles & Differentiators
+- **Client-Controlled Perimeter**: Workflows execute within client-controlled infrastructure. Sensitive financial records, account identifiers, and proprietary data do not leave the client's security boundary.
+- **Deterministic & Auditable**: Every reconciliation difference traces directly to explicit inputs and configured business rules.
+- **Financial-Services Credibility**: Deep experience with transactional systems, ledgers, trading platforms, and market-data feeds where rounding errors and timing cut-offs carry severe operational and regulatory risk.
+- **Not Generic IT / Not Just a CSV Tool**: Focused senior engineering delivery solving high-stakes data integrity questions, backed by reusable local-first tooling.
+
+## Commercial Entry Offer
+- **Reconciliation Diagnostic**: A bounded first engagement to assess source/target systems, define matching keys, run representative reconciliations, and deliver an auditable discrepancy report with automation recommendations.
+
+## Canonical Routes
+- [Home](https://shipdatafast.com/)
+- [Financial Services](https://shipdatafast.com/financial-services/)
+- [Data Reconciliation Consulting](https://shipdatafast.com/services/data-reconciliation/)
+- [Data Engineering](https://shipdatafast.com/services/data-engineering/)
+- [Data Validation](https://shipdatafast.com/services/data-validation/)
+- [Reconciliation Engine Product](https://shipdatafast.com/products/reconciliation/)
+- [Data Validation Product](https://shipdatafast.com/products/validation/)
+- [About ShipDataFast](https://shipdatafast.com/about/)
+- [Discuss a Reconciliation Problem](https://shipdatafast.com/contact/)
