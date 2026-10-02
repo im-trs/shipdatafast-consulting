@@ -58,7 +58,7 @@ Building automated controls, assertions, and pipelines around critical financial
 
 ## Commercial Entry Offer
 - **Migration Reconciliation Readiness Review**: GBP 1,500 + VAT, 2 days, no access to client data needed. Before a mock load, parallel run or cutover, we review matching keys, tolerances, expected differences, who owns each difference and who signs off. Deliverable: a written list of gaps.
-- **Migration Sign-off Check**: GBP 3,750, 5 days.
+- **Migration Sign-off Check**: GBP 3,750 + VAT, 5 days.
 - **Free resource**: Migration Sign-off Checklist (PDF): https://shipdatafast.com/checklist/
 - **Reconciliation Diagnostic**: A bounded first engagement to assess source/target systems, define matching keys, run representative reconciliations, and deliver an auditable discrepancy report with automation recommendations.
 
