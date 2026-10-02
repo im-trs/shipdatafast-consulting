@@ -69,54 +69,87 @@
           </div>
           <div class="eyebrow">DIRECT CONTACT</div>
           <h1 class="h1-interior">Discuss a reconciliation or migration problem.</h1>
-          <p class="intro">Tell us which systems are involved, what differences or risks you are seeing, and when you need an answer. A short description is enough to start a technical conversation.</p>
+          <p class="intro">Tell us which systems are involved, what does not match, and when you need an answer. A short description is enough to start.</p>
         </div>
       </section>
 
-      <!-- 3 contact options with anchors per §15 -->
+      <!-- Lead Funnel: Embedded Tally Form -->
       <section class="section">
         <div class="container">
-          <div style="display: grid; grid-template-columns: 1fr; gap: 32px;">
-            <!-- Option 01: Reconciliation Diagnostic & Consulting -->
-            <div id="reconciliation" style="background: var(--white); border: 1px solid var(--ink); padding: 32px;">
-              <div class="eyebrow" style="color: var(--blue);">OPTION 01 / RECOMMENDED STARTING POINT</div>
-              <h2>Migration Reconciliation Readiness Review</h2>
-              <p><strong>&pound;1,500 + VAT, 2 days, no access to your data needed.</strong> Before a mock load, parallel run or cutover, we review your matching keys, tolerances, expected differences, who owns each difference and who signs off. You get a written list of gaps.</p>
-              <p>Next step if you need it: Migration Sign-off Check, &pound;3,750 + VAT, 5 days. For hands-on comparisons, migrations and transaction integrity checks, ask about a Reconciliation Diagnostic.</p>
-              <p style="margin-top: 16px;">
-                <a href="mailto:info@shipdatafast.com?subject=Migration%20Reconciliation%20Readiness%20Review" class="btn-primary">Email: info@shipdatafast.com</a>
-              </p>
-            </div>
+          <div class="tally-wrapper">
+            <iframe
+              id="tally-embed"
+              data-tally-src="https://tally.so/embed/ja141J?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="480"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Discuss a reconciliation or migration problem"
+              class="tally-iframe"
+            ></iframe>
 
-            <!-- Option 02: Tooling & Reconciliation Engine -->
-            <div style="background: var(--white); border: 1px solid var(--ink); padding: 32px;">
-              <div class="eyebrow">OPTION 02</div>
-              <h2>ShipDataFast Reconciliation Engine</h2>
-              <p>For bespoke local-first reconciliation tooling built for your needs and run inside your infrastructure, for repeatable dataset comparisons.</p>
-              <p style="margin-top: 16px;">
-                <a href="mailto:info@shipdatafast.com?subject=ShipDataFast%20Reconciliation%20Engine%20enquiry" class="btn-primary">Email: info@shipdatafast.com</a>
-              </p>
-            </div>
-
-            <!-- Option 03: Validation & Engineering -->
-            <div id="validation" style="background: var(--white); border: 1px solid var(--ink); padding: 32px;">
-              <div class="eyebrow">OPTION 03</div>
-              <h2>Data Validation &amp; Engineering</h2>
-              <p>For custom pipeline architecture, intake schema validation, and automated assertion suites.</p>
-              <p style="margin-top: 16px;">
-                <a href="mailto:info@shipdatafast.com?subject=ShipDataFast%20Data%20Validation%20enquiry" class="btn-primary">Email: info@shipdatafast.com</a>
+            <div class="tally-fallback">
+              <p style="margin: 0; font-size: 14px;">
+                Having trouble with the embedded form?
+                <a id="tally-fallback-link" href="https://tally.so/r/ja141J" target="_blank" rel="noopener noreferrer">Open the secure form directly on Tally &rarr;</a>
+                or email us directly at <a href="mailto:info@shipdatafast.com">info@shipdatafast.com</a>.
               </p>
             </div>
           </div>
 
-          <div style="margin-top: 48px; padding: 24px; border: 1px solid var(--line); background: var(--paper);">
-            <p style="font-family: var(--font-data); font-size: 13px; color: var(--muted); margin: 0;">
-              <strong>Security Note:</strong> Please do not send confidential data, API credentials, or unredacted financial records in initial emails. Direct address for copying: <code>info@shipdatafast.com</code>
+          <div class="contact-security-box">
+            <p>
+              <strong>Security Note:</strong> Please do not submit confidential data, API credentials, or unredacted financial records. Initial enquiries need only a high-level summary of your systems and problem scope. Direct address for copying: <code>info@shipdatafast.com</code>
             </p>
           </div>
         </div>
       </section>
     </main>
+
+    <script>
+      (function() {
+        // Forward URL query parameters (interest, source, utm_*) into Tally embed and fallback link
+        try {
+          var currentParams = new URLSearchParams(window.location.search);
+          var allowedParams = ['interest', 'source', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+          var queryParams = [];
+
+          allowedParams.forEach(function(param) {
+            var val = currentParams.get(param);
+            if (val) {
+              queryParams.push(encodeURIComponent(param) + '=' + encodeURIComponent(val));
+            }
+          });
+
+          var tallyIframe = document.getElementById('tally-embed');
+          var fallbackLink = document.getElementById('tally-fallback-link');
+
+          if (queryParams.length > 0) {
+            var queryString = queryParams.join('&');
+
+            if (tallyIframe) {
+              var baseEmbedSrc = tallyIframe.getAttribute('data-tally-src');
+              var separator = baseEmbedSrc.indexOf('?') !== -1 ? '&' : '?';
+              var newEmbedSrc = baseEmbedSrc + separator + queryString;
+              tallyIframe.setAttribute('data-tally-src', newEmbedSrc);
+              if (tallyIframe.src) {
+                tallyIframe.src = newEmbedSrc;
+              }
+            }
+
+            if (fallbackLink) {
+              var baseFallbackHref = 'https://tally.so/r/ja141J';
+              fallbackLink.href = baseFallbackHref + '?' + queryString;
+            }
+          }
+        } catch (e) {
+          console.warn('Parameter forwarding error:', e);
+        }
+      })();
+    </script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
 
     <footer class="site-footer">
       <div class="container">
