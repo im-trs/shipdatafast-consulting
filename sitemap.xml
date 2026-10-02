@@ -5,6 +5,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://shipdatafast.com/checklist/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://shipdatafast.com/services/data-engineering/</loc>
     <priority>0.8</priority>
   </url>

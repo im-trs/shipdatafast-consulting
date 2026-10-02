@@ -4,7 +4,7 @@
 
 ## Summary
 
-ShipDataFast helps financial-services institutions, fintechs, and technical data teams prove that data has moved correctly between systems. We combine senior consulting expertise with automated reconciliation engineering and proprietary local-first tooling to detect missing, corrupted, duplicate, and mismatched records before they become production problems.
+ShipDataFast helps financial-services institutions, fintechs, and technical data teams prove that data has moved correctly between systems. We build bespoke local-first validation and reconciliation tools for a client's needs, or run the comparisons, validations and reconciliations ourselves from files and rules the client supplies, to detect missing, corrupted, duplicate, and mismatched records before they become production problems.
 
 The consultancy is the core business. Our reconciliation and validation tools support consulting delivery and can also operate as software products within client-controlled environments.
 
@@ -51,12 +51,15 @@ Building automated controls, assertions, and pipelines around critical financial
   - Link: https://shipdatafast.com/products/validation/
 
 ## Operational Principles & Differentiators
-- **Client-Controlled Perimeter**: Workflows execute within client-controlled infrastructure. Sensitive financial records, account identifiers, and proprietary data do not leave the client's security boundary.
+- **Client-Controlled Perimeter**: Workflows execute within client-controlled infrastructure. Sensitive financial records, account identifiers, and confidential data do not leave the client's security boundary.
 - **Deterministic & Auditable**: Every reconciliation difference traces directly to explicit inputs and configured business rules.
-- **Financial-Services Credibility**: Deep experience with transactional systems, ledgers, trading platforms, and market-data feeds where rounding errors and timing cut-offs carry severe operational and regulatory risk.
+- **Background**: Ivano Mannella has worked as an employee and consultant for PIC and M&G (UK insurance and asset management) on data and validation work around their trading and investment systems.
 - **Not Generic IT / Not Just a CSV Tool**: Focused senior engineering delivery solving high-stakes data integrity questions, backed by reusable local-first tooling.
 
 ## Commercial Entry Offer
+- **Migration Reconciliation Readiness Review**: GBP 1,500 + VAT, 2 days, no access to client data needed. Before a mock load, parallel run or cutover, we review matching keys, tolerances, expected differences, who owns each difference and who signs off. Deliverable: a written list of gaps.
+- **Migration Sign-off Check**: GBP 3,750, 5 days.
+- **Free resource**: Migration Sign-off Checklist (PDF): https://shipdatafast.com/checklist/
 - **Reconciliation Diagnostic**: A bounded first engagement to assess source/target systems, define matching keys, run representative reconciliations, and deliver an auditable discrepancy report with automation recommendations.
 
 ## Canonical Routes

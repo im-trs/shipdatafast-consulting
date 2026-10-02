@@ -54,7 +54,7 @@
               "name": "What is the difference between data validation and data reconciliation?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Data reconciliation compares corresponding records across two separate datasets (such as source and target systems) to detect discrepancies and missing items. In contrast, data validation evaluates a single dataset against explicit criteria—such as required fields, unique keys, and numeric thresholds—without requiring a second comparison dataset."
+                "text": "Data reconciliation compares corresponding records across two separate datasets (such as source and target systems) to detect discrepancies and missing items. In contrast, data validation evaluates a single dataset against explicit criteria (such as required fields, unique keys, and numeric thresholds) without requiring a second comparison dataset."
               }
             },
             {
@@ -70,7 +70,7 @@
               "name": "Does ShipDataFast consulting or software require uploading data to external cloud servers?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. ShipDataFast consulting workflows and reconciliation tooling operate inside client-controlled infrastructure. Sensitive financial records, account balances, and proprietary datasets remain strictly inside your security boundary."
+                "text": "No. ShipDataFast consulting workflows and reconciliation tooling operate inside client-controlled infrastructure. Sensitive financial records, account balances, and confidential datasets remain strictly inside your security boundary."
               }
             },
             {
@@ -94,7 +94,7 @@
               "name": "Why choose specialized data engineering consulting over general IT consultancy firms?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Generalist consulting firms typically deploy large, multi-tier teams focused on broad advisory work. ShipDataFast provides direct, hands-on senior engineering with dedicated matching and validation tooling—solving concrete data discrepancy problems with deterministic code and rapid handovers."
+                "text": "Generalist consulting firms typically deploy large, multi-tier teams focused on broad advisory work. ShipDataFast provides direct, hands-on senior engineering with dedicated matching and validation tooling, solving concrete data discrepancy problems with deterministic code and rapid handovers."
               }
             },
             {
@@ -102,7 +102,7 @@
               "name": "How do you prevent vendor lock-in for data validation and reconciliation workflows?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Every engagement prioritizes client autonomy. We provide fully documented matching specifications, transparent rule configurations, and auditable deliverables that run inside your perimeter—ensuring your internal team retains complete operational control without proprietary dependencies."
+                "text": "Every engagement prioritizes client autonomy. We provide fully documented matching specifications, transparent rule configurations, and auditable deliverables that run inside your perimeter, ensuring your internal team retains complete operational control without lock-in to our tooling."
               }
             }
           ]
@@ -258,6 +258,33 @@
         </div>
       </section>
 
+      <!-- Current offer: Migration Reconciliation Readiness Review -->
+      <section class="section" id="readiness-review" style="background: var(--white); border-bottom: 1px solid var(--line);">
+        <div class="container editorial-5-7">
+          <div>
+            <div class="eyebrow" style="color: var(--blue);">FIXED-PRICE STARTING POINT</div>
+            <h2>Migration Reconciliation Readiness Review</h2>
+            <p class="intro"><strong>&pound;1,500 + VAT. 2 days. No access to your data needed.</strong></p>
+          </div>
+          <div>
+            <p>Before a mock load, parallel run or cutover, we review how your reconciliation is set up:</p>
+            <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 16px;">
+              <li><strong>Matching keys:</strong> what makes a source record and a target record the same.</li>
+              <li><strong>Tolerances:</strong> the acceptable variance at each level.</li>
+              <li><strong>Expected differences:</strong> the known, accepted differences agreed up front.</li>
+              <li><strong>Ownership:</strong> who owns each difference.</li>
+              <li><strong>Sign-off:</strong> who signs off, and on what evidence.</li>
+            </ul>
+            <p>You get a written list of gaps to close before the load.</p>
+            <p class="text-muted">Next step if you need it: <strong>Migration Sign-off Check: &pound;3,750, 5 days.</strong></p>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px;">
+              <a href="mailto:info@shipdatafast.com?subject=Migration%20Reconciliation%20Readiness%20Review" class="btn-primary">Book a Readiness Review</a>
+              <a href="./checklist/" class="btn-secondary">Free Migration Sign-off Checklist (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- 8.3 Problem Statement (§4) -->
       <section class="section">
         <div class="container editorial-5-7">
@@ -267,7 +294,7 @@
           </div>
           <div>
             <p class="intro">System A says 10,004,219 records. System B says 10,004,101. We find the other 118.</p>
-            <p>Pipelines execute without throwing code exceptions, yet balances diverge, rounding rules create subtle drift, and critical position rows vanish during migration. Typical situations we resolve:</p>
+            <p>Pipelines execute without throwing code exceptions, yet balances diverge, rounding rules create subtle drift, and critical position rows vanish during migration. Typical situations we check for:</p>
             <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 16px;">
               <li><strong>12 million records migrated:</strong> Can you independently prove all 12 million arrived without distortion?</li>
               <li><strong>Aggregate totals match, but positions do not:</strong> Compensating errors mask offsetting discrepancies.</li>
@@ -277,7 +304,7 @@
               <li><strong>Currency &amp; decimal precision:</strong> Discrepancies caused by floating-point rounding vs fixed decimal ledgers.</li>
               <li><strong>Composite keys &amp; disparate models:</strong> Legacy and target systems represent the same business object differently.</li>
             </ul>
-            <p class="text-muted">We provide deterministic reconciliation and migration assurance so your stakeholders have auditable certainty.</p>
+            <p class="text-muted">We provide deterministic reconciliation and migration assurance so your stakeholders have auditable evidence.</p>
           </div>
         </div>
       </section>
@@ -287,7 +314,7 @@
         <div class="container">
           <div style="margin-bottom: 48px;">
             <div class="eyebrow">SERVICES HIERARCHY</div>
-            <h2>Deterministic reconciliation. Proven at scale.</h2>
+            <h2>Deterministic reconciliation. Every difference explained.</h2>
             <p class="intro">We prioritize reconciliation and migration assurance, supported by disciplined data engineering.</p>
           </div>
 
@@ -335,7 +362,7 @@
           <div style="margin-bottom: 32px;">
             <div class="eyebrow">CROSS-PLATFORM REACH</div>
             <h2>Reconcile systems, not just files.</h2>
-            <p class="intro">ShipDataFast is not limited to CSV exports. We reconcile complex enterprise architectures, databases, vendor feeds, and trading systems across transformations.</p>
+            <p class="intro">ShipDataFast is not limited to CSV exports. We work from extracts of databases, ledgers, vendor feeds, and trading and investment systems, before and after transformation.</p>
           </div>
 
           <div class="system-flow-grid">
@@ -373,7 +400,7 @@
 
           <div style="margin-top: 24px; padding: 16px 20px; background: var(--white); border: 1px solid var(--line);">
             <p style="font-size: 14px; color: var(--muted); margin: 0;">
-              <strong>Experience in complex ecosystems:</strong> Senior engineering experience in financial-services environments involving core trading and investment platforms (such as Murex and Aladdin ecosystems), market-data vendor feeds (including Bloomberg feeds), and transactional core ledgers.
+              <strong>Background:</strong> Ivano Mannella has worked as an employee and consultant for PIC and M&amp;G (UK insurance and asset management) on data and validation work around their trading and investment systems.
             </p>
           </div>
         </div>
@@ -383,9 +410,9 @@
       <section class="section" style="background: var(--white);">
         <div class="container editorial-5-7">
           <div>
-            <div class="eyebrow" style="color: var(--blue);">ENTRY ENGAGEMENT</div>
+            <div class="eyebrow" style="color: var(--blue);">HANDS-ON ENGAGEMENT</div>
             <h2>Reconciliation Diagnostic</h2>
-            <p class="intro">A bounded, high-impact first engagement to determine whether two critical systems actually agree.</p>
+            <p class="intro">A bounded engagement to determine whether two critical systems actually agree, when you need the comparison run, not just reviewed.</p>
           </div>
           <div>
             <p>Rather than committing to an open-ended consultancy contract, start with an explicit assessment on your two most critical datasets:</p>
@@ -409,7 +436,7 @@
           <div style="margin-bottom: 48px;">
             <div class="eyebrow">DELIVERY ACCELERATORS</div>
             <h2>Reconciliation tooling that works within your perimeter.</h2>
-            <p class="intro">We leverage proprietary, local-first software to accelerate consulting engagements without sensitive customer datasets ever leaving your security boundary.</p>
+            <p class="intro">We build bespoke local-first validation and reconciliation tools for your needs, or run the comparisons, validations and reconciliations ourselves from files and rules you supply. Either way, sensitive datasets stay inside your security boundary.</p>
           </div>
 
           <div class="product-pair">
@@ -485,7 +512,7 @@
           </div>
           <div>
             <p class="intro">ShipDataFast is a specialist consultancy founded by senior data engineer Ivano Mannella (TR Seeds Ltd), dedicated to proving that critical data moves accurately.</p>
-            <p>With hands-on background in financial systems, transaction processing, and complex migration assurance, we replace guesswork and opaque manual comparisons with deterministic, repeatable engineering.</p>
+            <p>Ivano has worked as an employee and consultant for PIC and M&amp;G (UK insurance and asset management) on data and validation work around their trading and investment systems. We replace guesswork and opaque manual comparisons with deterministic, repeatable checks.</p>
             <p style="margin-top: 24px;">
               <a href="./about/" style="margin-right: 24px; font-weight: 600;">About the company &rarr;</a>
               <a href="./financial-services/" style="font-weight: 600;">Financial services expertise &rarr;</a>
@@ -507,7 +534,7 @@
             <details class="faq-item">
               <summary>What is the difference between data validation and data reconciliation?</summary>
               <div class="faq-answer">
-                <p>Data reconciliation compares corresponding records across two separate datasets (such as source and target systems) to detect discrepancies and missing items. In contrast, data validation evaluates a single dataset against explicit criteria—such as required fields, unique keys, and numeric thresholds—without requiring a second comparison dataset.</p>
+                <p>Data reconciliation compares corresponding records across two separate datasets (such as source and target systems) to detect discrepancies and missing items. In contrast, data validation evaluates a single dataset against explicit criteria (such as required fields, unique keys, and numeric thresholds) without requiring a second comparison dataset.</p>
               </div>
             </details>
 
@@ -521,7 +548,7 @@
             <details class="faq-item">
               <summary>Does ShipDataFast consulting or software require uploading data to external cloud servers?</summary>
               <div class="faq-answer">
-                <p>No. ShipDataFast consulting and specialized tools are designed for zero-trust, local, or client-controlled environments. Workflows and comparisons run directly within your designated infrastructure, ensuring confidential financial records, client identifiers, and proprietary data never leave your secure perimeter.</p>
+                <p>No. ShipDataFast consulting and specialized tools are designed for zero-trust, local, or client-controlled environments. Workflows and comparisons run directly within your designated infrastructure, ensuring confidential financial records, client identifiers, and confidential data never leave your secure perimeter.</p>
               </div>
             </details>
 
@@ -542,14 +569,14 @@
             <details class="faq-item">
               <summary>Why choose specialized data engineering consulting over general IT consultancy firms?</summary>
               <div class="faq-answer">
-                <p>Generalist consulting firms typically deploy large, multi-tier teams focused on broad advisory work. ShipDataFast provides direct, hands-on senior engineering with dedicated matching and validation tooling—solving concrete data discrepancy problems with deterministic code and rapid handovers.</p>
+                <p>Generalist consulting firms typically deploy large, multi-tier teams focused on broad advisory work. ShipDataFast provides direct, hands-on senior engineering with dedicated matching and validation tooling, solving concrete data discrepancy problems with deterministic code and rapid handovers.</p>
               </div>
             </details>
 
             <details class="faq-item">
               <summary>How do you prevent vendor lock-in for data validation and reconciliation workflows?</summary>
               <div class="faq-answer">
-                <p>Every engagement prioritizes client autonomy. We provide fully documented matching specifications, transparent rule configurations, and auditable deliverables that run inside your perimeter—ensuring your internal team retains complete operational control without proprietary dependencies.</p>
+                <p>Every engagement prioritizes client autonomy. We provide fully documented matching specifications, transparent rule configurations, and auditable deliverables that run inside your perimeter, ensuring your internal team retains complete operational control without lock-in to our tooling.</p>
               </div>
             </details>
           </div>

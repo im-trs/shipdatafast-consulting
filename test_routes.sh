@@ -14,6 +14,8 @@ ROUTES=(
   "/financial-services/"
   "/about/"
   "/contact/"
+  "/checklist/"
+  "/assets/migration-sign-off-checklist.pdf"
   "/privacy-policy/"
   "/tos/"
   "/assets/css/site.css"
