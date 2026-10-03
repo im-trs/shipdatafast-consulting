@@ -69,10 +69,41 @@
           </div>
           <div class="eyebrow">FREE DOWNLOAD</div>
           <h1 class="h1-interior">Migration Sign-off Checklist.</h1>
-          <p class="intro">What to agree before the mock load, check during reconciliation, and confirm before finance signs. A free 9-page PDF for programme directors, data migration leads, finance transformation leads, controllers and ERP consultants.</p>
-          <p style="margin-top: 24px;">
-            <a href="../assets/migration-sign-off-checklist.pdf" class="btn-primary" download>Download the checklist (PDF)</a>
-          </p>
+          <p class="intro">What to agree before the mock load, check during reconciliation, and confirm before finance signs. A free 9-page PDF for programme directors, data migration leads, finance transformation leads, controllers and ERP consultants. Tell us where to send it and the download opens straight away.</p>
+          <form class="gate-form" action="https://formsubmit.co/info@shipdatafast.com" method="POST" accept-charset="UTF-8">
+            <input type="hidden" name="_subject" value="Checklist download: new request">
+            <input type="hidden" name="_next" value="https://shipdatafast.com/checklist/thank-you-0a53e19f/">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Thanks for requesting the ShipDataFast Migration Sign-off Checklist. You can download it here: https://shipdatafast.com/dl/msc-26a450f069fd.pdf . If a reconciliation or sign-off question comes up on your programme, just reply to this email. Ivano Mannella, ShipDataFast">
+            <input type="hidden" name="source" id="gate-source" value="checklist-page">
+            <input type="text" name="_honey" class="gate-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="gate-field">
+              <label for="gate-email">Work email <span aria-hidden="true">*</span></label>
+              <input id="gate-email" type="email" name="email" required autocomplete="email" placeholder="you@company.com">
+            </div>
+            <div class="gate-field">
+              <label for="gate-name">Name</label>
+              <input id="gate-name" type="text" name="name" autocomplete="name">
+            </div>
+            <div class="gate-row">
+              <div class="gate-field">
+                <label for="gate-company">Company</label>
+                <input id="gate-company" type="text" name="company" autocomplete="organization">
+              </div>
+              <div class="gate-field">
+                <label for="gate-role">Role</label>
+                <input id="gate-role" type="text" name="role" autocomplete="organization-title">
+              </div>
+            </div>
+            <div class="gate-check">
+              <input id="gate-consent" type="checkbox" name="consent" value="Yes, happy to receive occasional emails">
+              <label for="gate-consent">Yes, ShipDataFast may email me occasionally about migration reconciliation. I can unsubscribe at any time.</label>
+            </div>
+            <p class="gate-privacy">We use your details to send you the checklist and, only if you tick the box, the occasional follow-up. We never sell or share them. Read our <a href="../privacy-policy/">privacy policy</a>.</p>
+            <button type="submit" class="btn-primary">Get the checklist (PDF)</button>
+          </form>
         </div>
       </section>
 
@@ -144,5 +175,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      (function () {
+        try {
+          var q = new URLSearchParams(window.location.search);
+          var parts = [];
+          ['source', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].forEach(function (k) {
+            if (q.get(k)) { parts.push(k + '=' + q.get(k)); }
+          });
+          if (parts.length) { document.getElementById('gate-source').value = 'checklist-page; ' + parts.join('; '); }
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>

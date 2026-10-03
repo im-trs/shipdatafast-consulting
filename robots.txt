@@ -1,24 +1,38 @@
 User-agent: *
 Allow: /
+Disallow: /dl/
+Disallow: /checklist/thank-you
 
 # Explicit AI Search & Assistant Crawlers (GEO / Answer Engines)
 User-agent: GPTBot
 Allow: /
+Disallow: /dl/
+Disallow: /checklist/thank-you
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /dl/
+Disallow: /checklist/thank-you
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /dl/
+Disallow: /checklist/thank-you
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /dl/
+Disallow: /checklist/thank-you
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /dl/
+Disallow: /checklist/thank-you
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /dl/
+Disallow: /checklist/thank-you
 
 # Training Scrapers (Disallow Bulk Training)
 User-agent: CCBot
